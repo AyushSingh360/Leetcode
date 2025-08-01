@@ -1,0 +1,19 @@
+class Solution(object):
+    def myPow(self, x, n):
+        """
+        :type x: float
+        :type n: int
+        :rtype: float
+        """
+        if n < 0:
+            x = 1 / x
+            n = -n
+
+        result = 1.0
+        while n:
+            if n % 2 == 1:       # If current bit is 1
+                result *= x
+            x *= x               # Square the base
+            n //= 2              # Shift right (divide power by 2)
+        return result
+
