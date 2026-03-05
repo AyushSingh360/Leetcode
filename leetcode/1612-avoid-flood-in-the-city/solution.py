@@ -9,42 +9,38 @@ class Solution(object):
         n = len(rains)
         ans = [-1] * n
         
-        # Track which lakes are full and when they were filled
-        full_lakes = {}  # lake_id -> day index when filled
+        # lastRain[lake] = last index when this lake got rain (is full from that day)
+        lastRain = {}
         
-        # Track available dry days (indices where rains[i] == 0)
-        dry_days = []
+        # sorted list of indices where rains[i] == 0 (days we can dry some lake)
+        dryDays = []
         
         for i, lake in enumerate(rains):
-            if lake == 0:
-                # This is a dry day - we'll decide later which lake to dry
-                dry_days.append(i)
-            else:
-                # It's raining on this lake
-                if lake in full_lakes:
-                    # This lake is already full - need to find a dry day to dry it
-                    last_rain_day = full_lakes[lake]
+            if lake > 0:
+                # it's raining on lake
+                if lake in lastRain:
+                    # lake already full, we must dry it on some dry day > lastRain[lake]
+                    prev = lastRain[lake]
                     
-                    # Find the first dry day after last_rain_day using binary search
-                    idx = bisect_right(dry_days, last_rain_day)
-                    
-                    if idx >= len(dry_days):
-                        # No available dry day - flood is inevitable
+                    # find smallest dry day index > prev
+                    pos = bisect_right(dryDays, prev)
+                    if pos == len(dryDays):
+                        # no dry day available after prev -> impossible
                         return []
                     
-                    # Use this dry day to dry this lake
-                    dry_day = dry_days[idx]
-                    ans[dry_day] = lake
-                    dry_days.pop(idx)
-                    
-                    # Remove from full_lakes since we dried it
-                    del full_lakes[lake]
+                    dryIndex = dryDays[pos]
+                    # use this dry day to dry 'lake'
+                    ans[dryIndex] = lake
+                    # remove that dry day from available list
+                    dryDays.pop(pos)
                 
-                # Mark this lake as full
-                full_lakes[lake] = i
-        
-        # For remaining dry days, just dry any lake (use lake 1)
-        for day in dry_days:
-            ans[day] = 1
+                # now lake becomes full today
+                lastRain[lake] = i
+                ans[i] = -1  # per problem, rainy days are -1
+            else:
+                # dry day, mark as 1 for now; if unused, any value is ok
+                dryDays.append(i)
+                ans[i] = 1   # placeholder, may be overwritten later
         
         return ans
+
