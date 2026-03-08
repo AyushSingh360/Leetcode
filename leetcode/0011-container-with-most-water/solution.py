@@ -9,10 +9,14 @@ class Solution(object):
 
         while left < right:
             h = min(height[left], height[right])
-            max_area = max(max_area, h * (right - left))
+            width = right - left
+            max_area = max(max_area, h * width)
+
+            # move the shorter line inward to try and find a taller one
             if height[left] < height[right]:
                 left += 1
             else:
                 right -= 1
 
         return max_area
+
