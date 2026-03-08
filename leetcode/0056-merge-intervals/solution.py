@@ -7,18 +7,22 @@ class Solution(object):
         if not intervals:
             return []
 
-        # Step 1: Sort intervals based on the start time
+        # sort by start time
         intervals.sort(key=lambda x: x[0])
-        merged = [intervals[0]]
 
-        for current in intervals[1:]:
-            prev = merged[-1]
+        merged = []
+        current_start, current_end = intervals[0]
 
-            # Overlapping intervals -> merge
-            if current[0] <= prev[1]:
-                prev[1] = max(prev[1], current[1])
+        for start, end in intervals[1:]:
+            # if overlapping, extend the current interval
+            if start <= current_end:
+                current_end = max(current_end, end)
             else:
-                merged.append(current)
+                # no overlap, push the finished interval and start a new one
+                merged.append([current_start, current_end])
+                current_start, current_end = start, end
 
+        # add the last interval
+        merged.append([current_start, current_end])
         return merged
 
