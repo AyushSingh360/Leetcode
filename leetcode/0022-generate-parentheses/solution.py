@@ -4,17 +4,22 @@ class Solution(object):
         :type n: int
         :rtype: List[str]
         """
-        result = []
+        res = []
 
-        def backtrack(current, open_count, close_count):
-            if len(current) == 2 * n:
-                result.append(current)
+        def backtrack(curr, open_cnt, close_cnt):
+            # curr: current string, open_cnt: number of '(' used, close_cnt: number of ')' used
+            if len(curr) == 2 * n:
+                res.append(curr)
                 return
-            if open_count < n:
-                backtrack(current + "(", open_count + 1, close_count)
-            if close_count < open_count:
-                backtrack(current + ")", open_count, close_count + 1)
+
+            # we can add '(' if we still have some left
+            if open_cnt < n:
+                backtrack(curr + "(", open_cnt + 1, close_cnt)
+
+            # we can add ')' only if there are more '(' than ')'
+            if close_cnt < open_cnt:
+                backtrack(curr + ")", open_cnt, close_cnt + 1)
 
         backtrack("", 0, 0)
-        return result
+        return res
 
