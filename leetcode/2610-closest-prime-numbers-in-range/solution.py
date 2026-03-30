@@ -1,35 +1,30 @@
-class Solution(object):
-    def closestPrimes(self, left, right):
-        """
-        :type left: int
-        :type right: int
-        :rtype: List[int]
-        """
-        # Sieve of Eratosthenes to find all primes up to right
+from typing import List
+
+class Solution:
+    def closestPrimes(self, left: int, right: int) -> List[int]:
+        # Sieve of Eratosthenes up to right
         is_prime = [True] * (right + 1)
-        is_prime[0] = is_prime[1] = False
+        if right >= 0:
+            is_prime[0] = False
+        if right >= 1:
+            is_prime[1] = False
 
-        for i in range(2, int(right**0.5) + 1):
-            if is_prime[i]:
-                for j in range(i * i, right + 1, i):
-                    is_prime[j] = False
+        p = 2
+        while p * p <= right:
+            if is_prime[p]:
+                for multiple in range(p * p, right + 1, p):
+                    is_prime[multiple] = False
+            p += 1
 
-        # Collect all primes in the range [left, right]
-        primes = [i for i in range(left, right + 1) if is_prime[i]]
+        prev = -1
+        best_pair = [-1, -1]
+        best_diff = float("inf")
 
-        if len(primes) < 2:
-            return [-1, -1]
+        for x in range(max(2, left), right + 1):
+            if is_prime[x]:
+                if prev != -1 and x - prev < best_diff:
+                    best_diff = x - prev
+                    best_pair = [prev, x]
+                prev = x
 
-        min_diff = float('inf')
-        ans = [-1, -1]
-
-        for i in range(1, len(primes)):
-            diff = primes[i] - primes[i - 1]
-            if diff < min_diff:
-                min_diff = diff
-                ans = [primes[i - 1], primes[i]]
-                if diff == 1:  # Can't get better than this
-                    break
-
-        return ans
-
+        return best_pair
