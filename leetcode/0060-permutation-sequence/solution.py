@@ -1,22 +1,23 @@
-class Solution(object):
-    def getPermutation(self, n, k):
-        """
-        :type n: int
-        :type k: int
-        :rtype: str
-        """
-        from math import factorial
+from typing import List
 
-        numbers = list(range(1, n + 1))
-        k -= 1  # 0-based indexing
-        result = ""
+class Solution:
+    def getPermutation(self, n: int, k: int) -> str:
+        # make k zero-based
+        k -= 1
+
+        # precompute factorials
+        fact = [1] * (n + 1)
+        for i in range(1, n + 1):
+            fact[i] = fact[i - 1] * i
+
+        nums = [str(i) for i in range(1, n + 1)]
+        ans = []
 
         for i in range(n, 0, -1):
-            fact = factorial(i - 1)
-            index = k // fact
-            result += str(numbers[index])
-            numbers.pop(index)
-            k %= fact
+            block_size = fact[i - 1]
+            index = k // block_size
+            k %= block_size
 
-        return result
+            ans.append(nums.pop(index))
 
+        return "".join(ans)
