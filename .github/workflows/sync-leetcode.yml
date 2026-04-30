@@ -12,6 +12,10 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - name: Set Git identity
+        run: |
+          git config --global user.name "AyushSingh360"
+          git config --global user.email "ayushsingh21109@gmail.com"
       - name: Sync accepted submissions
         uses: joshcai/leetcode-sync@master
         with:
