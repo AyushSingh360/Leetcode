@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def constructProductMatrix(self, grid: List[List[int]]) -> List[List[int]]:
         MOD = 12345
@@ -33,4 +34,3 @@ class Solution:
                 idx += 1
 
         return ans
-

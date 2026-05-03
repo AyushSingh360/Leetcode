@@ -1,6 +1,7 @@
 from collections import defaultdict, Counter
 from typing import List
 
+
 class DSU:
     def __init__(self, n: int):
         self.parent = list(range(n))
@@ -22,6 +23,7 @@ class DSU:
         else:
             self.parent[ry] = rx
             self.rank[rx] += 1
+
 
 class Solution:
     def minimumHammingDistance(

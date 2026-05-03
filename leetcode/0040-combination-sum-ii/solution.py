@@ -20,10 +20,11 @@ class Solution(object):
                 if candidates[i] == prev:
                     continue  # skip duplicates
                 path.append(candidates[i])
-                backtrack(i + 1, path, total + candidates[i])  # move to next index (no reuse)
+                backtrack(
+                    i + 1, path, total + candidates[i]
+                )  # move to next index (no reuse)
                 path.pop()
                 prev = candidates[i]
 
         backtrack(0, [], 0)
         return result
-

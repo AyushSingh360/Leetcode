@@ -15,4 +15,3 @@ class Solution(object):
                 count = 0
 
         return longest
-

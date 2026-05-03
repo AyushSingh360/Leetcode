@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def minimumDistance(self, nums: List[int]) -> int:
         n = len(nums)
@@ -15,7 +16,7 @@ class Solution:
             next_idx[i] = last_pos[v]
             last_pos[v] = i
 
-        ans = float('inf')
+        ans = float("inf")
 
         # For each index, try to form a triple using consecutive occurrences
         for i in range(n):
@@ -28,4 +29,4 @@ class Solution:
             # distance = 2 * (third - i)
             ans = min(ans, 2 * (third - i))
 
-        return -1 if ans == float('inf') else ans
+        return -1 if ans == float("inf") else ans

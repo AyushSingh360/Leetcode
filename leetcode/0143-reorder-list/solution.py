@@ -6,6 +6,7 @@
 
 from typing import Optional
 
+
 class Solution:
     def reorderList(self, head: Optional[ListNode]) -> None:
         """

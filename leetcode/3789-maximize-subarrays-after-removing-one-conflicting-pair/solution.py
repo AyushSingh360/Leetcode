@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maxSubarrays(self, n: int, conflictingPairs: List[List[int]]) -> int:
         # right[r] = list of left endpoints l for conflicts (l, r) with l < r, 0-based

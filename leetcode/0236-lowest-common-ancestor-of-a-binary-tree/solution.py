@@ -8,8 +8,8 @@
 
 class Solution:
     def lowestCommonAncestor(
-        self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode'
-    ) -> 'TreeNode':
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> "TreeNode":
         # Base case: if root is None or matches p or q, return it
         if not root or root == p or root == q:
             return root

@@ -1,6 +1,7 @@
 from typing import List
 from collections import deque
 
+
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
         wordSet = set(wordList)
@@ -18,7 +19,7 @@ class Solution:
                 for c in "abcdefghijklmnopqrstuvwxyz":
                     if c == word[i]:
                         continue
-                    nxt = word[:i] + c + word[i+1:]
+                    nxt = word[:i] + c + word[i + 1 :]
                     if nxt in wordSet:
                         wordSet.remove(nxt)
                         q.append((nxt, dist + 1))

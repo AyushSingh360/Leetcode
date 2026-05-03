@@ -1,10 +1,11 @@
 import random
 
+
 class RandomizedSet(object):
 
     def __init__(self):
-        self.arr = []          # store values
-        self.pos = {}          # val -> index in arr
+        self.arr = []  # store values
+        self.pos = {}  # val -> index in arr
 
     def insert(self, val):
         """
@@ -42,4 +43,3 @@ class RandomizedSet(object):
         :rtype: int
         """
         return random.choice(self.arr)
-

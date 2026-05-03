@@ -1,6 +1,7 @@
 from typing import List
 from collections import deque
 
+
 class Solution:
     def countPartitions(self, nums: List[int], k: int) -> int:
         MOD = 10**9 + 7

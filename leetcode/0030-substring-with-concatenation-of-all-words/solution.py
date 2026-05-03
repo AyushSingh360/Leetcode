@@ -21,7 +21,7 @@ class Solution(object):
             count = 0
 
             while right + word_len <= len(s):
-                word = s[right:right + word_len]
+                word = s[right : right + word_len]
                 right += word_len
 
                 if word in word_map:
@@ -30,7 +30,7 @@ class Solution(object):
 
                     # If word is seen too many times, move left pointer
                     while seen[word] > word_map[word]:
-                        left_word = s[left:left + word_len]
+                        left_word = s[left : left + word_len]
                         seen[left_word] -= 1
                         count -= 1
                         left += word_len
@@ -45,4 +45,3 @@ class Solution(object):
                     left = right
 
         return result
-

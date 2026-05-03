@@ -1,9 +1,10 @@
 from typing import List
 
+
 class Solution:
     def maximumAmount(self, coins: List[List[int]]) -> int:
         m, n = len(coins), len(coins[0])
-        NEG_INF = -10**18
+        NEG_INF = -(10**18)
 
         # dp[i][j][k]: max coins at (i, j) using exactly k neutralizations
         dp = [[[NEG_INF] * 3 for _ in range(n)] for __ in range(m)]
@@ -27,9 +28,9 @@ class Solution:
                 for k in range(3):
                     best_prev = NEG_INF
                     if i > 0:
-                        best_prev = max(best_prev, dp[i-1][j][k])
+                        best_prev = max(best_prev, dp[i - 1][j][k])
                     if j > 0:
-                        best_prev = max(best_prev, dp[i][j-1][k])
+                        best_prev = max(best_prev, dp[i][j - 1][k])
 
                     if best_prev == NEG_INF:
                         continue
@@ -43,10 +44,10 @@ class Solution:
                         if k > 0:
                             best_prev2 = NEG_INF
                             if i > 0:
-                                best_prev2 = max(best_prev2, dp[i-1][j][k-1])
+                                best_prev2 = max(best_prev2, dp[i - 1][j][k - 1])
                             if j > 0:
-                                best_prev2 = max(best_prev2, dp[i][j-1][k-1])
+                                best_prev2 = max(best_prev2, dp[i][j - 1][k - 1])
                             if best_prev2 != NEG_INF:
                                 dp[i][j][k] = max(dp[i][j][k], best_prev2)
 
-        return max(dp[m-1][n-1])
+        return max(dp[m - 1][n - 1])

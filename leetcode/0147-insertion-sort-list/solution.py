@@ -4,12 +4,13 @@
 #         self.val = val
 #         self.next = next
 
+
 class Solution:
     def insertionSortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head or not head.next:
             return head
 
-        dummy = ListNode(float('-inf'))
+        dummy = ListNode(float("-inf"))
         curr = head
 
         while curr:

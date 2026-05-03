@@ -71,4 +71,3 @@ class LRUCache(object):
             new_node = Node(key, value)
             self.map[key] = new_node
             self._add_to_front(new_node)
-

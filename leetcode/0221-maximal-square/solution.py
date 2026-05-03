@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maximalSquare(self, matrix: List[List[str]]) -> int:
         if not matrix or not matrix[0]:
@@ -12,14 +13,14 @@ class Solution:
 
         for i in range(m):
             for j in range(n):
-                if matrix[i][j] == '1':
+                if matrix[i][j] == "1":
                     if i == 0 or j == 0:
                         dp[i][j] = 1
                     else:
                         dp[i][j] = 1 + min(
-                            dp[i - 1][j],      # top
-                            dp[i][j - 1],      # left
-                            dp[i - 1][j - 1]   # top-left
+                            dp[i - 1][j],  # top
+                            dp[i][j - 1],  # left
+                            dp[i - 1][j - 1],  # top-left
                         )
                     max_side = max(max_side, dp[i][j])
 

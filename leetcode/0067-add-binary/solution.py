@@ -16,8 +16,7 @@ class Solution:
                 total += int(b[j])
                 j -= 1
 
-            res.append(str(total % 2))   # current bit
-            carry = total // 2           # next carry
+            res.append(str(total % 2))  # current bit
+            carry = total // 2  # next carry
 
         return "".join(reversed(res))
-

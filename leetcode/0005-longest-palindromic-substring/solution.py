@@ -22,4 +22,4 @@ class Solution:
             # even length
             expand(i, i + 1)
 
-        return s[start:start + max_len]
+        return s[start : start + max_len]

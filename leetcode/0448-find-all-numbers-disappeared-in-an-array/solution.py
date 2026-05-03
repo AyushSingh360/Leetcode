@@ -19,4 +19,3 @@ class Solution(object):
                 res.append(i + 1)
 
         return res
-

@@ -1,6 +1,7 @@
 from typing import List
 from math import inf
 
+
 class Solution:
     def maximumGap(self, nums: List[int]) -> int:
         n = len(nums)
@@ -28,7 +29,7 @@ class Solution:
         max_gap = 0
         prev_max = mn
         for b_min, b_max in buckets:
-            if b_min > b_max:   # empty bucket
+            if b_min > b_max:  # empty bucket
                 continue
             max_gap = max(max_gap, b_min - prev_max)
             prev_max = b_max

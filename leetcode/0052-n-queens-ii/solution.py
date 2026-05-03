@@ -26,4 +26,3 @@ class Solution(object):
 
         backtrack(0)
         return self.count
-

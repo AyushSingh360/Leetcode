@@ -44,4 +44,3 @@ class Robot:
         if self.offset <= west:
             return "West"
         return "South"
-

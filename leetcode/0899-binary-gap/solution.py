@@ -9,10 +9,9 @@ class Solution(object):
         ans = 0
 
         for i, ch in enumerate(b):
-            if ch == '1':
+            if ch == "1":
                 if prev != -1:
                     ans = max(ans, i - prev)
                 prev = i
 
         return ans
-

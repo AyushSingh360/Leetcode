@@ -15,4 +15,3 @@ class Solution(object):
                 curr_end = farthest
 
         return jumps
-

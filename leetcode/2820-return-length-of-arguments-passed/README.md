@@ -1,4 +1,5 @@
 Write a function&nbsp;<code>argumentsLength</code> that returns the count of arguments passed to it.
+
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 

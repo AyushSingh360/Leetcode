@@ -5,8 +5,8 @@ class Solution(object):
         :rtype: List[int]
         """
         n = len(prices)
-        ans = prices[:]      # start with original prices
-        stack = []           # will store indices, prices[stack] increasing
+        ans = prices[:]  # start with original prices
+        stack = []  # will store indices, prices[stack] increasing
 
         for i in range(n):
             # While current price can serve as discount for previous items
@@ -16,4 +16,3 @@ class Solution(object):
             stack.append(i)
 
         return ans
-

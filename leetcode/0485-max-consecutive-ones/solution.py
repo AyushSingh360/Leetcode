@@ -16,4 +16,3 @@ class Solution(object):
                 current = 0
 
         return max_count
-

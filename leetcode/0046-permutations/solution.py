@@ -21,4 +21,3 @@ class Solution(object):
 
         backtrack([], [False] * len(nums))
         return result
-

@@ -7,15 +7,16 @@
 
 from typing import Optional
 
+
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         # both null → same
         if not p and not q:
             return True
-        
+
         # one null or value mismatch → different
         if not p or not q or p.val != q.val:
             return False
-        
+
         # recursively check left and right subtrees
         return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)

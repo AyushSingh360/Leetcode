@@ -8,10 +8,9 @@ class Solution(object):
         # So if the pattern "01" appears and later we see '1', return False.
         seen_zero_after_one = False
         for ch in s:
-            if ch == '0':
+            if ch == "0":
                 seen_zero_after_one = True
             else:  # ch == '1'
                 if seen_zero_after_one:
                     return False
         return True
-

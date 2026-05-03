@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
@@ -17,4 +18,3 @@ class Solution:
 
         # Exclude last or exclude first
         return max(rob_linear(nums[:-1]), rob_linear(nums[1:]))
-

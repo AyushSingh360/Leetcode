@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class Solution(object):
     def orangesRotting(self, grid):
         """
@@ -40,4 +41,3 @@ class Solution(object):
 
         # if there are still fresh oranges, it's impossible
         return minutes if fresh == 0 else -1
-

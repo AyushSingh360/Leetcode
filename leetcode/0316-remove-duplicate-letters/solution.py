@@ -21,4 +21,3 @@ class Solution(object):
             in_stack.add(c)
 
         return "".join(stack)
-

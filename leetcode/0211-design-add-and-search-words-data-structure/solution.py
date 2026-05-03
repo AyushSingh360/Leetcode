@@ -1,9 +1,11 @@
 from typing import Dict
 
+
 class TrieNode:
     def __init__(self):
         self.children: Dict[str, TrieNode] = {}
         self.is_end = False
+
 
 class WordDictionary:
 
@@ -23,7 +25,7 @@ class WordDictionary:
             # Walk the pattern from position index starting at node
             for i in range(index, len(word)):
                 ch = word[i]
-                if ch == '.':
+                if ch == ".":
                     # Try all possible children for wildcard
                     for child in node.children.values():
                         if dfs(i + 1, child):

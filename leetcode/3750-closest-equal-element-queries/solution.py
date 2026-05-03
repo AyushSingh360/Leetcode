@@ -1,6 +1,7 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def solveQueries(self, nums: List[int], queries: List[int]) -> List[int]:
         n = len(nums)

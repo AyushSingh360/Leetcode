@@ -6,8 +6,11 @@
 
 from typing import Optional
 
+
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+    def reverseBetween(
+        self, head: Optional[ListNode], left: int, right: int
+    ) -> Optional[ListNode]:
         if not head or left == right:
             return head
 

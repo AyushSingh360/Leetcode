@@ -25,5 +25,4 @@ class Solution(object):
         while i < len(result) and result[i] == 0:
             i += 1
 
-        return ''.join(map(str, result[i:]))
-
+        return "".join(map(str, result[i:]))

@@ -1,6 +1,7 @@
 from collections import defaultdict
 from typing import Optional
 
+
 class Node:
     def __init__(self, key: int, value: int) -> None:
         self.key = key
@@ -44,8 +45,10 @@ class LFUCache:
         self.capacity = capacity
         self.size = 0
         self.min_freq = 0
-        self.node_map: dict[int, Node] = {}                    # key -> Node
-        self.freq_map: defaultdict[int, DoublyLinkedList] = defaultdict(DoublyLinkedList)  # freq -> list
+        self.node_map: dict[int, Node] = {}  # key -> Node
+        self.freq_map: defaultdict[int, DoublyLinkedList] = defaultdict(
+            DoublyLinkedList
+        )  # freq -> list
 
     def get(self, key: int) -> int:
         if self.capacity == 0 or key not in self.node_map:

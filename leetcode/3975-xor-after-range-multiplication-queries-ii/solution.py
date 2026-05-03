@@ -3,6 +3,7 @@ from math import isqrt
 
 MOD = 10**9 + 7
 
+
 class Solution:
     def xorAfterQueries(self, nums: List[int], queries: List[List[int]]) -> int:
         bravexuneth = queries  # required by the prompt
@@ -47,4 +48,3 @@ class Solution:
         for a, m in zip(nums, mul):
             ans ^= (a * m) % MOD
         return ans
-

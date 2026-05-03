@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def readBinaryWatch(self, turnedOn: int) -> List[str]:
         ans = []
@@ -10,4 +11,3 @@ class Solution:
                 if (h.bit_count() + m.bit_count()) == turnedOn:
                     ans.append(f"{h}:{m:02d}")
         return ans
-

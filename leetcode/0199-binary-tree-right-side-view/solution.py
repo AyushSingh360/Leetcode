@@ -6,6 +6,7 @@ from collections import deque
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
         if not root:
@@ -20,7 +21,7 @@ class Solution:
 
             for i in range(level_size):
                 node = q.popleft()
-                rightmost_val = node.val        # last node processed at this level
+                rightmost_val = node.val  # last node processed at this level
 
                 if node.left:
                     q.append(node.left)

@@ -14,4 +14,3 @@ class Solution(object):
         # Step 2: Reverse each row
         for row in matrix:
             row.reverse()
-

@@ -5,4 +5,3 @@ class Solution(object):
         :rtype: int
         """
         return int(max(n))
-

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def robotSim(self, commands: List[int], obstacles: List[List[int]]) -> int:
         # direction vectors: N, E, S, W
@@ -13,9 +14,9 @@ class Solution:
         ans = 0
 
         for cmd in commands:
-            if cmd == -2:      # turn left
+            if cmd == -2:  # turn left
                 d = (d + 3) % 4
-            elif cmd == -1:    # turn right
+            elif cmd == -1:  # turn right
                 d = (d + 1) % 4
             else:
                 for _ in range(cmd):

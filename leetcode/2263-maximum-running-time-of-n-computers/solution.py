@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maxRunTime(self, n: int, batteries: List[int]) -> int:
         # Feasibility: can we run n computers for 't' minutes?
@@ -23,8 +24,8 @@ class Solution:
             mid = (left + right) // 2
             if can_run(mid):
                 ans = mid
-                left = mid + 1    # try longer
+                left = mid + 1  # try longer
             else:
-                right = mid - 1   # try shorter
+                right = mid - 1  # try shorter
 
         return ans

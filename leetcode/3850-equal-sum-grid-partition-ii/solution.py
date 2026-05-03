@@ -2,7 +2,7 @@ class Solution:
     def canPartitionGrid(self, grid: List[List[int]]) -> bool:
         total = sum(sum(row) for row in grid)
         m, n = len(grid), len(grid[0])
-        
+
         def canPartition(g):
             # g is either original, reversed, transposed, or reversed-transposed
             # We iterate through rows of g. Each row is a "line" in the grid g.
@@ -36,7 +36,7 @@ class Solution:
                     if len(g[0]) > 1 and i > 0 and diff in seen:
                         return True
             return False
-        
+
         # 4 orientations to check:
         # 1. grid: horizontal cuts, try removing from top
         # 2. grid[::-1]: horizontal cuts, try removing from bottom (reversed)

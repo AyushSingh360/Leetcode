@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def findTheString(self, lcp: List[List[int]]) -> str:
         n = len(lcp)
@@ -40,14 +41,14 @@ class Solution:
 
         # Assign letters to groups, using as few different letters as possible
         group_char = {}
-        next_char_ord = ord('a')
-        word = ['?'] * n
+        next_char_ord = ord("a")
+        word = ["?"] * n
 
         # Sort indices to ensure lexicographically smallest assignment
         for i in range(n):
             root = find(i)
             if root not in group_char:
-                if next_char_ord > ord('z'):
+                if next_char_ord > ord("z"):
                     return ""
                 group_char[root] = chr(next_char_ord)
                 next_char_ord += 1

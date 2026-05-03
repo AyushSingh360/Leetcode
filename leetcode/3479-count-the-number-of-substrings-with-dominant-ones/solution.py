@@ -6,20 +6,20 @@ class Solution:
         # Precompute prefix sums of ones
         pref1 = [0] * (n + 1)
         for i, ch in enumerate(s):
-            pref1[i + 1] = pref1[i] + (ch == '1')
+            pref1[i + 1] = pref1[i] + (ch == "1")
 
         # Collect indices of zeros
         zero_pos = []
         for i, ch in enumerate(s):
-            if ch == '0':
+            if ch == "0":
                 zero_pos.append(i)
 
         # All-ones substrings (0 zeros) are always dominant
         i = 0
         while i < n:
-            if s[i] == '1':
+            if s[i] == "1":
                 j = i
-                while j < n and s[j] == '1':
+                while j < n and s[j] == "1":
                     j += 1
                 L = j - i
                 ans += L * (L + 1) // 2
@@ -29,6 +29,7 @@ class Solution:
 
         # For substrings with k >= 1 zeros, k is at most sqrt(n)
         import math
+
         K = int(math.isqrt(n)) + 1
         m = len(zero_pos)
 

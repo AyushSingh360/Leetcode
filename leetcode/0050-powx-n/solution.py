@@ -11,9 +11,8 @@ class Solution(object):
 
         result = 1.0
         while n:
-            if n % 2 == 1:       # If current bit is 1
+            if n % 2 == 1:  # If current bit is 1
                 result *= x
-            x *= x               # Square the base
-            n //= 2              # Shift right (divide power by 2)
+            x *= x  # Square the base
+            n //= 2  # Shift right (divide power by 2)
         return result
-

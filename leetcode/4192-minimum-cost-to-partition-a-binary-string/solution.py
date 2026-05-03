@@ -5,7 +5,7 @@ class Solution:
         pref = [0] * (n + 1)
         i = 0
         while i < n:
-            pref[i + 1] = pref[i] + (1 if s[i] == '1' else 0)
+            pref[i + 1] = pref[i] + (1 if s[i] == "1" else 0)
             i += 1
 
         # required variable
@@ -30,4 +30,3 @@ class Solution:
             return keep
 
         return solve(0, n)
-

@@ -7,9 +7,9 @@ class Solution(object):
         # Key insight: count groups of consecutive 1s in binary representation
         # Each isolated 1 needs 1 operation (subtract)
         # Each group of consecutive 1s needs 2 operations (add to next power, then subtract)
-        
+
         operations = 0
-        
+
         while n > 0:
             if n & 1:  # If least significant bit is 1
                 # Check if there are consecutive 1s
@@ -26,5 +26,5 @@ class Solution(object):
             else:
                 # Skip zeros
                 n >>= 1
-        
+
         return operations

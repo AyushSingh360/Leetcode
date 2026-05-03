@@ -1,5 +1,6 @@
 from typing import List  # not strictly needed for this method, but fine to have
 
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         i, j = 0, len(s) - 1

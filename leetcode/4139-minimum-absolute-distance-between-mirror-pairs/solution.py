@@ -1,6 +1,7 @@
 from collections import defaultdict
 import bisect
 
+
 class Solution:
     def minMirrorPairDistance(self, nums: List[int]) -> int:
         def rev(x: int) -> int:
@@ -10,7 +11,7 @@ class Solution:
         for i, x in enumerate(nums):
             pos[x].append(i)
 
-        ans = float('inf')
+        ans = float("inf")
 
         for i, x in enumerate(nums):
             r = rev(x)
@@ -23,4 +24,4 @@ class Solution:
                 j = idx_list[j_pos]
                 ans = min(ans, j - i)
 
-        return ans if ans != float('inf') else -1
+        return ans if ans != float("inf") else -1

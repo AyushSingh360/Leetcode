@@ -12,5 +12,4 @@ class Solution(object):
             i -= 1
 
         # i is now index of last non-vowel, so take prefix up to i
-        return s[:i+1]
-
+        return s[: i + 1]

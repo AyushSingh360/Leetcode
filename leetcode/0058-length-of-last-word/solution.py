@@ -5,4 +5,3 @@ class Solution(object):
         :rtype: int
         """
         return len(s.strip().split()[-1])
-

@@ -1,6 +1,7 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def countSubarrays(self, nums: List[int], k: int) -> int:
         n = len(nums)

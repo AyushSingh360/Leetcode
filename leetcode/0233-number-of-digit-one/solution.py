@@ -8,8 +8,8 @@ class Solution:
 
         while base <= n:
             high = n // (base * 10)
-            cur  = (n // base) % 10
-            low  = n % base
+            cur = (n // base) % 10
+            low = n % base
 
             if cur == 0:
                 count += high * base

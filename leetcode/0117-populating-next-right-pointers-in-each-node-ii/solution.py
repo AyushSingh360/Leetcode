@@ -1,9 +1,12 @@
 # Definition for a Node.
 class Node:
-    def __init__(self, val: int = 0,
-                 left: 'Node' = None,
-                 right: 'Node' = None,
-                 next: 'Node' = None):
+    def __init__(
+        self,
+        val: int = 0,
+        left: "Node" = None,
+        right: "Node" = None,
+        next: "Node" = None,
+    ):
         self.val = val
         self.left = left
         self.right = right
@@ -11,7 +14,7 @@ class Node:
 
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
+    def connect(self, root: "Node") -> "Node":
         if not root:
             return root
 
@@ -19,8 +22,8 @@ class Solution:
         curr = root
 
         while curr:
-            dummy = Node(0)     # dummy head for the next level
-            tail = dummy        # tail builds the linked list (via next) of next level
+            dummy = Node(0)  # dummy head for the next level
+            tail = dummy  # tail builds the linked list (via next) of next level
             # Traverse current level
             while curr:
                 if curr.left:

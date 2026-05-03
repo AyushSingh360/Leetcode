@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def nextBeautifulNumber(self, n: int) -> int:
         def is_balanced(x: int) -> bool:

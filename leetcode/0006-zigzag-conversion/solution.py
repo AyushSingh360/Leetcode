@@ -8,7 +8,7 @@ class Solution(object):
         if numRows == 1 or numRows >= len(s):
             return s
 
-        rows = [''] * numRows
+        rows = [""] * numRows
         current_row = 0
         going_down = False
 
@@ -18,5 +18,4 @@ class Solution(object):
                 going_down = not going_down
             current_row += 1 if going_down else -1
 
-        return ''.join(rows)
-
+        return "".join(rows)

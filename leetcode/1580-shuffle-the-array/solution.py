@@ -8,8 +8,7 @@ class Solution(object):
         ans = [0] * (2 * n)
         idx = 0
         for i in range(n):
-            ans[idx] = nums[i]        # xi
-            ans[idx + 1] = nums[i+n]  # yi
+            ans[idx] = nums[i]  # xi
+            ans[idx + 1] = nums[i + n]  # yi
             idx += 2
         return ans
-

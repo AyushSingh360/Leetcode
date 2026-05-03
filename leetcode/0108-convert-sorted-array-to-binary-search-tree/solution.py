@@ -7,6 +7,7 @@ from typing import List, Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def sortedArrayToBST(self, nums: List[int]) -> Optional[TreeNode]:
         def build(left: int, right: int) -> Optional[TreeNode]:

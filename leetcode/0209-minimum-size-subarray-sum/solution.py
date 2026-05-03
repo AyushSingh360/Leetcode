@@ -3,7 +3,7 @@ class Solution:
         n = len(nums)
         left = 0
         curr_sum = 0
-        ans = float('inf')
+        ans = float("inf")
 
         for right in range(n):
             curr_sum += nums[right]
@@ -14,4 +14,4 @@ class Solution:
                 curr_sum -= nums[left]
                 left += 1
 
-        return 0 if ans == float('inf') else ans
+        return 0 if ans == float("inf") else ans

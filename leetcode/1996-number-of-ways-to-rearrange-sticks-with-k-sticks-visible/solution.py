@@ -11,7 +11,7 @@ class Solution:
                 # place tallest at front -> new visible
                 visible = dp[i - 1][j - 1]
                 # place tallest somewhere else (i-1 positions) -> not visible
-                hidden  = (i - 1) * dp[i - 1][j]
+                hidden = (i - 1) * dp[i - 1][j]
                 dp[i][j] = (visible + hidden) % MOD
 
         return dp[n][k]

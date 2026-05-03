@@ -1,9 +1,10 @@
 from typing import List
 from collections import Counter
 
+
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        freq = Counter(nums)                  # value -> frequency
+        freq = Counter(nums)  # value -> frequency
 
         # Buckets where index = frequency, value = list of numbers
         buckets = [[] for _ in range(len(nums) + 1)]

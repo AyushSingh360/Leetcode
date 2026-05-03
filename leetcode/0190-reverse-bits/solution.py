@@ -7,4 +7,3 @@ class Solution:
             # shift n right to process next bit
             n >>= 1
         return res
-

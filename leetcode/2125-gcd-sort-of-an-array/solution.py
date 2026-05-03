@@ -1,6 +1,7 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def gcdSort(self, nums: List[int]) -> bool:
         max_num = max(nums)

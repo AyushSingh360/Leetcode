@@ -21,7 +21,7 @@ class Solution:
             for end in range(start, len(s)):
                 if is_pal(start, end):
                     # Choose
-                    part.append(s[start:end + 1])
+                    part.append(s[start : end + 1])
                     # Explore
                     backtrack(end + 1)
                     # Un-choose

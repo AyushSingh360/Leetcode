@@ -1,7 +1,7 @@
 class Solution:
     def numDecodings(self, s: str) -> int:
         n = len(s)
-        if n == 0 or s[0] == '0':
+        if n == 0 or s[0] == "0":
             return 0
 
         # dp[i-2] and dp[i-1]
@@ -11,11 +11,11 @@ class Solution:
             curr = 0
 
             # Single-digit decode (s[i])
-            if s[i] != '0':
+            if s[i] != "0":
                 curr += prev1
 
             # Two-digit decode (s[i-1:i+1])
-            two = int(s[i-1:i+1])
+            two = int(s[i - 1 : i + 1])
             if 10 <= two <= 26:
                 curr += prev2
 

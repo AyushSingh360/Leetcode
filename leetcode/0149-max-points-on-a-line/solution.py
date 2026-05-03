@@ -2,6 +2,7 @@ from typing import List
 from collections import defaultdict
 from math import gcd
 
+
 class Solution:
     def maxPoints(self, points: List[List[int]]) -> int:
         n = len(points)

@@ -3,6 +3,7 @@ from collections import defaultdict
 
 MOD = 10**9 + 7
 
+
 class Solution:
     def countTrapezoids(self, points: List[List[int]]) -> int:
         by_y = defaultdict(int)

@@ -27,7 +27,7 @@ class Solution(object):
 
             r, c = empties[index]
             b = (r // 3) * 3 + (c // 3)
-            for num in '123456789':
+            for num in "123456789":
                 if num not in rows[r] and num not in cols[c] and num not in boxes[b]:
                     board[r][c] = num
                     rows[r].add(num)
@@ -37,11 +37,10 @@ class Solution(object):
                     if backtrack(index + 1):
                         return True
 
-                    board[r][c] = '.'
+                    board[r][c] = "."
                     rows[r].remove(num)
                     cols[c].remove(num)
                     boxes[b].remove(num)
             return False
 
         backtrack(0)
-

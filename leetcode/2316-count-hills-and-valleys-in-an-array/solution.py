@@ -13,14 +13,15 @@ class Solution(object):
                 j += 1
 
             if j < n:
-                if (nums[i] > nums[i - 1] and nums[i] > nums[j]) or \
-                   (nums[i] < nums[i - 1] and nums[i] < nums[j]):
+                if (nums[i] > nums[i - 1] and nums[i] > nums[j]) or (
+                    nums[i] < nums[i - 1] and nums[i] < nums[j]
+                ):
                     count += 1
             i = j
         return count
+
 
 # Example usage
 sol = Solution()
 print(sol.countHillValley([2, 4, 1, 1, 6, 5]))  # Output: 3
 print(sol.countHillValley([6, 6, 5, 5, 4, 1]))  # Output: 0
-

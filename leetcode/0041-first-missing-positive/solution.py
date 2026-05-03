@@ -16,4 +16,3 @@ class Solution(object):
                 return i + 1
 
         return n + 1
-

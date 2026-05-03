@@ -1,6 +1,7 @@
 from typing import List
 from math import gcd
 
+
 class Solution:
     def minOperations(self, nums: List[int]) -> int:
         n = len(nums)

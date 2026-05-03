@@ -26,4 +26,3 @@ class Solution(object):
             stack.append(heights[i])
 
         return res
-

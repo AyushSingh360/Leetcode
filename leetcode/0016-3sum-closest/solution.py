@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: int
         """
         nums.sort()
-        closest = float('inf')
+        closest = float("inf")
         n = len(nums)
 
         for i in range(n - 2):
@@ -22,4 +22,3 @@ class Solution(object):
                 else:
                     return target
         return closest
-

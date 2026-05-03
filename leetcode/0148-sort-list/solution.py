@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 
+
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         # Base case: empty list or single node
@@ -30,8 +31,9 @@ class Solution:
             fast = fast.next.next
         return slow
 
-    def _merge(self, l1: Optional[ListNode],
-                     l2: Optional[ListNode]) -> Optional[ListNode]:
+    def _merge(
+        self, l1: Optional[ListNode], l2: Optional[ListNode]
+    ) -> Optional[ListNode]:
         dummy = ListNode()
         tail = dummy
 

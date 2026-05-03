@@ -1,5 +1,6 @@
 from collections import defaultdict
 
+
 class Solution(object):
     def countPalindromePaths(self, parent, s):
         """
@@ -18,7 +19,7 @@ class Solution(object):
 
         def dfs_build(u):
             for v in g[u]:
-                c = ord(s[v]) - ord('a')
+                c = ord(s[v]) - ord("a")
                 masks[v] = masks[u] ^ (1 << c)
                 dfs_build(v)
 
@@ -43,4 +44,3 @@ class Solution(object):
             freq[m] += 1
 
         return ans
-

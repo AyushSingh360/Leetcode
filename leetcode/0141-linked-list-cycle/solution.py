@@ -5,6 +5,7 @@ from typing import Optional
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         slow = fast = head

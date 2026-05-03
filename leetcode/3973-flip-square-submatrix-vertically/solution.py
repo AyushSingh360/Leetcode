@@ -1,7 +1,10 @@
 from typing import List
 
+
 class Solution:
-    def reverseSubmatrix(self, grid: List[List[int]], x: int, y: int, k: int) -> List[List[int]]:
+    def reverseSubmatrix(
+        self, grid: List[List[int]], x: int, y: int, k: int
+    ) -> List[List[int]]:
         # top and bottom row indices of the k x k square
         top = x
         bottom = x + k - 1

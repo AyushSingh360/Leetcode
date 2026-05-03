@@ -16,4 +16,3 @@ class Solution(object):
             prev1 = curr
 
         return prev1
-

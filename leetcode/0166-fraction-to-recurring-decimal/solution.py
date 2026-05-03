@@ -1,5 +1,6 @@
 from typing import *
 
+
 class Solution:
     def fractionToDecimal(self, numerator: int, denominator: int) -> str:
         if numerator == 0:

@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def recoverTree(self, root: Optional[TreeNode]) -> None:
         """

@@ -4,6 +4,6 @@ class Solution:
 
         for c in columnTitle:
             # shift previous digits left in base 26, then add current digit
-            result = result * 26 + (ord(c) - ord('A') + 1)
+            result = result * 26 + (ord(c) - ord("A") + 1)
 
         return result

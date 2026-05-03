@@ -9,7 +9,7 @@ class Solution:
 
         # decompose into top-level special substrings
         for i, ch in enumerate(s):
-            bal += 1 if ch == '1' else -1
+            bal += 1 if ch == "1" else -1
             if bal == 0:
                 # inner part is s[start+1:i]
                 inner = self.makeLargestSpecial(s[start + 1 : i])

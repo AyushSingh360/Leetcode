@@ -6,6 +6,7 @@
 
 from typing import Optional
 
+
 class Solution:
     def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if not head or not head.next:

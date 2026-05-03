@@ -5,7 +5,7 @@ class Solution:
         words = s.split()
 
         # Reverse the list of words
-        words.reverse()          # or words = words[::-1]
+        words.reverse()  # or words = words[::-1]
 
         # Join with a single space
         return " ".join(words)

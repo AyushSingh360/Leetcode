@@ -5,6 +5,7 @@
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
         def helper(node, low, high):
@@ -17,7 +18,8 @@ class Solution:
 
             # Left subtree: high bound becomes node.val
             # Right subtree: low bound becomes node.val
-            return (helper(node.left, low, node.val) and
-                    helper(node.right, node.val, high))
+            return helper(node.left, low, node.val) and helper(
+                node.right, node.val, high
+            )
 
         return helper(root, float("-inf"), float("inf"))

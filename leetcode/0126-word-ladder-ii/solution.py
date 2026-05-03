@@ -1,8 +1,11 @@
 from collections import defaultdict, deque
 from typing import List
 
+
 class Solution:
-    def findLadders(self, beginWord: str, endWord: str, wordList: List[str]) -> List[List[str]]:
+    def findLadders(
+        self, beginWord: str, endWord: str, wordList: List[str]
+    ) -> List[List[str]]:
         word_set = set(wordList)
         if endWord not in word_set:
             return []
@@ -19,14 +22,14 @@ class Solution:
             for _ in range(len(q)):
                 word = q.popleft()
                 for nei in self._neighbors(word, word_set):
-                    if nei not in dist:          # first time seen: shortest distance
+                    if nei not in dist:  # first time seen: shortest distance
                         dist[nei] = level
                         parents[nei].append(word)
                         if nei == endWord:
                             found_end = True
                         else:
                             q.append(nei)
-                    elif dist[nei] == level:     # another shortest parent
+                    elif dist[nei] == level:  # another shortest parent
                         parents[nei].append(word)
 
         if endWord not in dist:

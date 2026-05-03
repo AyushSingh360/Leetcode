@@ -13,4 +13,3 @@ class Solution(object):
             result |= cur
 
         return len(result)
-

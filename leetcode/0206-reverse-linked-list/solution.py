@@ -4,15 +4,16 @@
 #         self.val = val
 #         self.next = next
 
+
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         prev = None
         curr = head
 
         while curr:
-            nxt = curr.next      # store next node
-            curr.next = prev     # reverse pointer
-            prev = curr          # move prev forward
-            curr = nxt           # move curr forward
+            nxt = curr.next  # store next node
+            curr.next = prev  # reverse pointer
+            prev = curr  # move prev forward
+            curr = nxt  # move curr forward
 
-        return prev              # new head
+        return prev  # new head

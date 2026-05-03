@@ -12,10 +12,9 @@ class Solution(object):
         while t_idx < len(target) and curr <= n:
             ops.append("Push")
             if curr == target[t_idx]:
-                t_idx += 1          # keep it
+                t_idx += 1  # keep it
             else:
-                ops.append("Pop")   # discard it
+                ops.append("Pop")  # discard it
             curr += 1
 
         return ops
-

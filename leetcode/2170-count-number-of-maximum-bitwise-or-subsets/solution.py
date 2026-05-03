@@ -13,7 +13,7 @@ class Solution:
                 if current_or == max_or:
                     count[0] += 1
                 return
-            
+
             # Include current element
             dfs(index + 1, current_or | nums[index])
             # Exclude current element
@@ -22,4 +22,3 @@ class Solution:
         # Start DFS
         dfs(0, 0)
         return count[0]
-

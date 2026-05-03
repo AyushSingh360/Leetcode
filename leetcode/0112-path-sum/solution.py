@@ -6,6 +6,7 @@ from typing import Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         if not root:
@@ -17,5 +18,6 @@ class Solution:
 
         # Recurse on children with reduced target
         remaining = targetSum - root.val
-        return (self.hasPathSum(root.left, remaining) or
-                self.hasPathSum(root.right, remaining))
+        return self.hasPathSum(root.left, remaining) or self.hasPathSum(
+            root.right, remaining
+        )

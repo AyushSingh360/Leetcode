@@ -1,19 +1,22 @@
 from typing import List
 
+
 class Solution:
-    def survivedRobotsHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
+    def survivedRobotsHealths(
+        self, positions: List[int], healths: List[int], directions: str
+    ) -> List[int]:
         n = len(positions)
         robots = sorted([(positions[i], i) for i in range(n)])
-        
-        stack = []          # indices of surviving right-moving robots
+
+        stack = []  # indices of surviving right-moving robots
         alive = [True] * n
-        
+
         for _, i in robots:
-            if directions[i] == 'R':
+            if directions[i] == "R":
                 stack.append(i)
             else:
                 while stack and alive[i]:
-                    j = stack[-1]   # right-moving robot
+                    j = stack[-1]  # right-moving robot
 
                     if healths[j] < healths[i]:
                         alive[j] = False
@@ -26,5 +29,5 @@ class Solution:
                         alive[i] = False
                         alive[j] = False
                         stack.pop()
-        
+
         return [healths[i] for i in range(n) if alive[i]]

@@ -1,6 +1,7 @@
 class Solution:
-    def maximizeSquareArea(self, m: int, n: int,
-                           hFences: List[int], vFences: List[int]) -> int:
+    def maximizeSquareArea(
+        self, m: int, n: int, hFences: List[int], vFences: List[int]
+    ) -> int:
         MOD = 10**9 + 7
 
         def all_distances(fences: List[int], limit: int) -> set[int]:

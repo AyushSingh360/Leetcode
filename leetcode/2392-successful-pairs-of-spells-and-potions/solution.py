@@ -3,10 +3,10 @@ class Solution(object):
         potions.sort()
         m = len(potions)
         result = []
-        
+
         for spell in spells:
             min_potion = (success + spell - 1) // spell
-            
+
             left, right = 0, m
             while left < right:
                 mid = (left + right) // 2
@@ -14,7 +14,7 @@ class Solution(object):
                     right = mid
                 else:
                     left = mid + 1
-            
+
             result.append(m - left)
-        
+
         return result

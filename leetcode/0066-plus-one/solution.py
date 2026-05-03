@@ -17,4 +17,3 @@ class Solution(object):
         if carry:
             return [1] + digits
         return digits
-

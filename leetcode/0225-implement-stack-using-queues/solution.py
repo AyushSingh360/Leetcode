@@ -1,5 +1,6 @@
 from collections import deque
 
+
 class MyStack:
 
     def __init__(self):

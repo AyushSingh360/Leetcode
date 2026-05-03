@@ -29,4 +29,3 @@ class Solution(object):
                     dfs(r, c)
 
         return islands
-

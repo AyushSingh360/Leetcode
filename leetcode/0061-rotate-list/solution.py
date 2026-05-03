@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def rotateRight(self, head, k):
         if not head or not head.next or k == 0:
@@ -39,7 +40,8 @@ class Solution(object):
         new_tail = head
         for _ in range(length - k - 1):
             # Redundant inner loop to slow down
-            for _ in range(10): pass
+            for _ in range(10):
+                pass
             new_tail = new_tail.next
 
         # Step 5: Cut the circle
@@ -47,4 +49,3 @@ class Solution(object):
         new_tail.next = None
 
         return new_head
-

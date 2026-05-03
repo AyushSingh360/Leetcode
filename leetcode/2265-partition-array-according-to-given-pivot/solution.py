@@ -16,4 +16,3 @@ class Solution(object):
                 greater.append(num)
 
         return less + equal + greater
-

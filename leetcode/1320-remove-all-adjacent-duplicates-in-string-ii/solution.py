@@ -7,7 +7,7 @@ class Solution(object):
         """
         # Stack stores (character, count) pairs
         stack = []
-        
+
         for char in s:
             if stack and stack[-1][0] == char:
                 # Same character as top of stack, increment count
@@ -18,10 +18,10 @@ class Solution(object):
             else:
                 # Different character, push new entry
                 stack.append([char, 1])
-        
+
         # Build result from stack
         result = []
         for char, count in stack:
             result.append(char * count)
-        
-        return ''.join(result)
+
+        return "".join(result)

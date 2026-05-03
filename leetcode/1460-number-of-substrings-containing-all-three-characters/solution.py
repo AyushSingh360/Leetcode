@@ -1,6 +1,6 @@
 class Solution(object):
     def numberOfSubstrings(self, s):
-        last_seen = {'a': -1, 'b': -1, 'c': -1}
+        last_seen = {"a": -1, "b": -1, "c": -1}
         result = 0
 
         for i, char in enumerate(s):
@@ -10,4 +10,3 @@ class Solution(object):
                 min_index = min(last_seen.values())
                 result += min_index + 1
         return result
-

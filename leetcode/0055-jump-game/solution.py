@@ -10,4 +10,3 @@ class Solution(object):
                 return False
             max_reach = max(max_reach, i + nums[i])
         return True
-

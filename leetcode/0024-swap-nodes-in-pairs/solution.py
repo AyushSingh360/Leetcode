@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def swapPairs(self, head):
         """
@@ -27,4 +28,3 @@ class Solution(object):
             head = first.next
 
         return dummy.next
-

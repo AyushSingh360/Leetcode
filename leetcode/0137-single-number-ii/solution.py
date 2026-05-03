@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         res = 0
@@ -12,9 +13,9 @@ class Solution:
 
             if bit_count % 3 != 0:
                 # set this bit in result
-                res |= (1 << bit)
+                res |= 1 << bit
 
         # handle negative numbers (32-bit signed)
         if res >= (1 << 31):
-            res -= (1 << 32)
+            res -= 1 << 32
         return res

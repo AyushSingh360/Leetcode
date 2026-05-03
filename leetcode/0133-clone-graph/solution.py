@@ -8,14 +8,15 @@ class Node:
 
 from typing import Optional
 
+
 class Solution:
-    def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
+    def cloneGraph(self, node: Optional["Node"]) -> Optional["Node"]:
         if not node:
             return None
 
         old_to_new = {}
 
-        def dfs(curr: 'Node') -> 'Node':
+        def dfs(curr: "Node") -> "Node":
             # If already cloned, return from map
             if curr in old_to_new:
                 return old_to_new[curr]

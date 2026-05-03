@@ -1,5 +1,6 @@
 from collections import Counter
 
+
 class Solution(object):
     def minCost(self, basket1, basket2):
         """
@@ -43,4 +44,3 @@ class Solution(object):
             cost += min(surplus[i], 2 * min_fruit)
 
         return cost
-

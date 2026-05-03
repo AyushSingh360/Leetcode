@@ -22,4 +22,3 @@ class Solution(object):
                     # truncate toward zero
                     stack.append(int(a / float(b)))
         return stack[-1]
-

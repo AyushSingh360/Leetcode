@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def countSubmatrices(self, grid: List[List[int]], k: int) -> int:
         m, n = len(grid), len(grid[0])
@@ -18,7 +19,6 @@ class Solution:
             j = 1
             while j <= n and pref[i][j] <= k:
                 j += 1
-            ans += (j - 1)
+            ans += j - 1
 
         return ans
-

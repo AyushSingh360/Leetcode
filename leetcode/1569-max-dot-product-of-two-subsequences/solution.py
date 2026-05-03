@@ -1,11 +1,12 @@
 from typing import List
 
+
 class Solution:
     def maxDotProduct(self, nums1: List[int], nums2: List[int]) -> int:
         m, n = len(nums1), len(nums2)
 
         # Initialize with very negative numbers (must pick at least one pair)
-        NEG_INF = float('-inf')
+        NEG_INF = float("-inf")
         dp = [[NEG_INF] * (n + 1) for _ in range(m + 1)]
 
         for i in range(1, m + 1):

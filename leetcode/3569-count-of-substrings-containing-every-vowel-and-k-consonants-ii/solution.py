@@ -1,6 +1,6 @@
 class Solution(object):
     def countOfSubstrings(self, word, k):
-        VOWELS = set('aeiou')
+        VOWELS = set("aeiou")
 
         def atMost(K):
             if K < 0:
@@ -31,4 +31,3 @@ class Solution(object):
             return res
 
         return atMost(k) - atMost(k - 1)
-

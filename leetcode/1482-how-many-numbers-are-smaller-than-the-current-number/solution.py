@@ -24,4 +24,3 @@ class Solution(object):
                 ans.append(freq[x - 1])
 
         return ans
-

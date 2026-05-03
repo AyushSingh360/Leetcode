@@ -7,6 +7,7 @@
 
 from typing import List, Optional
 
+
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         # Map each value to its index in inorder for O(1) splits

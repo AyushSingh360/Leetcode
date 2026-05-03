@@ -24,8 +24,8 @@ class Solution:
         for i in range(1, n):
             prev_char = word[i - 1]
             cur_char = word[i]
-            prev_idx = ord(prev_char) - ord('A')
-            cur_idx = ord(cur_char) - ord('A')
+            prev_idx = ord(prev_char) - ord("A")
+            cur_idx = ord(cur_char) - ord("A")
 
             new_dp = [INF] * 27
             for free_idx in range(27):
@@ -39,7 +39,7 @@ class Solution:
 
                 # Case 2: move the free finger (at free_idx) to cur_char
                 # meaning the free finger was at letter free_idx or none
-                free_char = None if free_idx == 26 else chr(free_idx + ord('A'))
+                free_char = None if free_idx == 26 else chr(free_idx + ord("A"))
                 cost2 = dp[free_idx] + dist(free_char, cur_char)
                 # now the free finger is at prev_char (index prev_idx)
                 new_dp[prev_idx] = min(new_dp[prev_idx], cost2)

@@ -1,9 +1,10 @@
 from typing import List
 
+
 class Solution:
     def maxPathScore(self, grid: List[List[int]], k: int) -> int:
         m, n = len(grid), len(grid[0])
-        NEG_INF = -10**18
+        NEG_INF = -(10**18)
 
         # dp[j][c]: best score to reach (current_row, j) with exact cost c
         prev = [[NEG_INF] * (k + 1) for _ in range(n)]

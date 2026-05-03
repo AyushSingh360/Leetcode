@@ -7,6 +7,7 @@
 
 from typing import Optional
 
+
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         # Base case: empty subtree

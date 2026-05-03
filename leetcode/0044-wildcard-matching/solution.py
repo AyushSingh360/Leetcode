@@ -9,10 +9,10 @@ class Solution(object):
         match = star_idx = -1
 
         while s_ptr < len(s):
-            if p_ptr < len(p) and (p[p_ptr] == s[s_ptr] or p[p_ptr] == '?'):
+            if p_ptr < len(p) and (p[p_ptr] == s[s_ptr] or p[p_ptr] == "?"):
                 s_ptr += 1
                 p_ptr += 1
-            elif p_ptr < len(p) and p[p_ptr] == '*':
+            elif p_ptr < len(p) and p[p_ptr] == "*":
                 star_idx = p_ptr
                 match = s_ptr
                 p_ptr += 1
@@ -23,8 +23,7 @@ class Solution(object):
             else:
                 return False
 
-        while p_ptr < len(p) and p[p_ptr] == '*':
+        while p_ptr < len(p) and p[p_ptr] == "*":
             p_ptr += 1
 
         return p_ptr == len(p)
-

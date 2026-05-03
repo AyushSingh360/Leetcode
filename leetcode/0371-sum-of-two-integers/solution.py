@@ -1,7 +1,7 @@
 class Solution:
     def getSum(self, a: int, b: int) -> int:
-        MASK = 0xFFFFFFFF       # 32 bits
-        MAX_INT = 0x7FFFFFFF    # max positive 32-bit int
+        MASK = 0xFFFFFFFF  # 32 bits
+        MAX_INT = 0x7FFFFFFF  # max positive 32-bit int
 
         # convert to 32-bit representation
         a &= MASK

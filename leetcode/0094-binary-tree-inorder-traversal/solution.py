@@ -7,6 +7,7 @@
 
 from typing import List, Optional
 
+
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         res: List[int] = []

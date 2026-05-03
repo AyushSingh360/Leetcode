@@ -1,6 +1,7 @@
 from bisect import bisect_left
 from typing import List
 
+
 class Solution:
     def maxWalls(self, robots: List[int], distance: List[int], walls: List[int]) -> int:
         n = len(robots)

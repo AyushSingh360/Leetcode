@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def champagneTower(self, poured: int, query_row: int, query_glass: int) -> float:
         # dp[row][glass] = amount of champagne in that glass (can be > 1 before split)[web:39]

@@ -5,12 +5,14 @@
 #         self.left = left
 #         self.right = right
 
+
 class Solution(object):
     def sumRootToLeaf(self, root):
         """
         :type root: Optional[TreeNode]
         :rtype: int
         """
+
         def dfs(node, curr):
             if not node:
                 return 0
@@ -23,4 +25,3 @@ class Solution(object):
             return dfs(node.left, curr) + dfs(node.right, curr)
 
         return dfs(root, 0)
-

@@ -25,4 +25,3 @@ class Solution(object):
                     result.append(row.pop(0))
 
         return result
-

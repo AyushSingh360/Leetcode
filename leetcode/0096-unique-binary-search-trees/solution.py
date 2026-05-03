@@ -8,8 +8,8 @@ class Solution:
         for nodes in range(2, n + 1):
             total = 0
             for root in range(1, nodes + 1):
-                left = root - 1          # nodes in left subtree
-                right = nodes - root     # nodes in right subtree
+                left = root - 1  # nodes in left subtree
+                right = nodes - root  # nodes in right subtree
                 total += dp[left] * dp[right]
             dp[nodes] = total
 

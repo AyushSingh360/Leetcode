@@ -1,13 +1,14 @@
 from typing import List
 
+
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        i = m - 1          # last valid index in nums1
-        j = n - 1          # last index in nums2
-        k = m + n - 1      # last position in nums1 (total length)
+        i = m - 1  # last valid index in nums1
+        j = n - 1  # last index in nums2
+        k = m + n - 1  # last position in nums1 (total length)
 
         # Merge from the back so we do not overwrite elements in nums1
         while j >= 0:

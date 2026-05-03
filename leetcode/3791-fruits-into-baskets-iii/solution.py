@@ -50,4 +50,3 @@ class Solution(object):
                 update(pos, 0)
 
         return unplaced
-

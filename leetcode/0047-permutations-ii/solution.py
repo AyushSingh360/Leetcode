@@ -25,4 +25,3 @@ class Solution(object):
 
         backtrack([])
         return result
-

@@ -6,6 +6,7 @@ from typing import Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         # returns height if balanced, -1 if not balanced

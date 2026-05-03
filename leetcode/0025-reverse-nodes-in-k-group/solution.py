@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def reverseKGroup(self, head, k):
         """
@@ -10,6 +11,7 @@ class Solution(object):
         :type k: int
         :rtype: ListNode
         """
+
         def get_kth(curr, k):
             while curr and k > 0:
                 curr = curr.next
@@ -39,4 +41,3 @@ class Solution(object):
             group_prev = tmp
 
         return dummy.next
-

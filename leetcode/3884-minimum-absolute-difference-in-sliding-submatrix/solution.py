@@ -1,6 +1,7 @@
 from typing import List
 from itertools import pairwise
 
+
 class Solution:
     def minAbsDiff(self, grid: List[List[int]], k: int) -> List[List[int]]:
         m, n = len(grid), len(grid[0])

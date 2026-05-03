@@ -4,6 +4,7 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
     def getIntersectionNode(
         self, headA: ListNode, headB: ListNode
@@ -20,4 +21,4 @@ class Solution:
             pA = pA.next if pA else headB
             pB = pB.next if pB else headA
 
-        return pA   # Either intersection node or None
+        return pA  # Either intersection node or None

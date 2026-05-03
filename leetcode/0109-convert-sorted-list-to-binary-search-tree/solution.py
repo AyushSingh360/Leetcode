@@ -11,20 +11,25 @@ from typing import Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
         if not head:
             return None
 
         # find middle node and split list into left part [head..prev] and mid.next.. for right
-        def get_mid(start: Optional[ListNode], end: Optional[ListNode]) -> Optional[ListNode]:
+        def get_mid(
+            start: Optional[ListNode], end: Optional[ListNode]
+        ) -> Optional[ListNode]:
             slow = fast = start
             while fast != end and fast.next != end:
                 fast = fast.next.next
                 slow = slow.next
             return slow
 
-        def build(start: Optional[ListNode], end: Optional[ListNode]) -> Optional[TreeNode]:
+        def build(
+            start: Optional[ListNode], end: Optional[ListNode]
+        ) -> Optional[TreeNode]:
             if start == end:
                 return None
 

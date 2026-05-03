@@ -1,11 +1,13 @@
 from typing import List
 
+
 class Solution:
     def exist(self, board: List[List[str]], word: str) -> bool:
         m, n = len(board), len(board[0])
 
         # Optional pruning: if word has more of some char than board, impossible
         from collections import Counter
+
         board_count = Counter(ch for row in board for ch in row)
         word_count = Counter(word)
         for ch, cnt in word_count.items():
@@ -23,14 +25,14 @@ class Solution:
 
             # Mark as visited
             tmp = board[i][j]
-            board[i][j] = '#'
+            board[i][j] = "#"
 
             # Explore 4 directions
             found = (
-                dfs(i + 1, j, k + 1) or
-                dfs(i - 1, j, k + 1) or
-                dfs(i, j + 1, k + 1) or
-                dfs(i, j - 1, k + 1)
+                dfs(i + 1, j, k + 1)
+                or dfs(i - 1, j, k + 1)
+                or dfs(i, j + 1, k + 1)
+                or dfs(i, j - 1, k + 1)
             )
 
             # Backtrack

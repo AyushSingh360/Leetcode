@@ -2,6 +2,7 @@ from typing import List
 
 MOD = 10**9 + 7
 
+
 class Solution:
     def xorAfterQueries(self, nums: List[int], queries: List[List[int]]) -> int:
         for l, r, k, v in queries:

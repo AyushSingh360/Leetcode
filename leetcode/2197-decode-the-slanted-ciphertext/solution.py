@@ -3,7 +3,7 @@ class Solution:
         n = len(encodedText)
         if rows == 0 or n == 0:
             return ""
-        
+
         cols = n // rows
         res = []
 

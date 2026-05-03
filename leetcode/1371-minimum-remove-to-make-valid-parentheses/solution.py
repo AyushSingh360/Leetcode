@@ -4,12 +4,12 @@ class Solution:
         tmp = []
         open_count = 0
         for ch in s:
-            if ch == ')':
+            if ch == ")":
                 if open_count == 0:
                     # Skip this unmatched ')'
                     continue
                 open_count -= 1
-            if ch == '(':
+            if ch == "(":
                 open_count += 1
             tmp.append(ch)
 
@@ -17,13 +17,13 @@ class Solution:
         res = []
         close_needed = 0
         for ch in reversed(tmp):
-            if ch == '(':
+            if ch == "(":
                 if close_needed == 0:
                     # Skip this unmatched '('
                     continue
                 close_needed -= 1
-            elif ch == ')':
+            elif ch == ")":
                 close_needed += 1
             res.append(ch)
 
-        return ''.join(reversed(res))
+        return "".join(reversed(res))

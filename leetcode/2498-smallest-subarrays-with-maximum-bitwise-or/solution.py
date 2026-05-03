@@ -21,4 +21,3 @@ class Solution(object):
             res[i] = farthest - i + 1
 
         return res
-

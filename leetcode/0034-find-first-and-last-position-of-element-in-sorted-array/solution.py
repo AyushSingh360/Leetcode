@@ -5,6 +5,7 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
+
         def findBound(isFirst):
             left, right = 0, len(nums) - 1
             result = -1
@@ -15,7 +16,7 @@ class Solution(object):
                     if isFirst:
                         right = mid - 1  # Move left
                     else:
-                        left = mid + 1   # Move right
+                        left = mid + 1  # Move right
                 elif nums[mid] < target:
                     left = mid + 1
                 else:
@@ -25,4 +26,3 @@ class Solution(object):
         first = findBound(True)
         last = findBound(False)
         return [first, last]
-

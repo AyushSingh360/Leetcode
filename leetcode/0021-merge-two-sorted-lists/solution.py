@@ -3,6 +3,7 @@ class ListNode(object):
         self.val = val
         self.next = next
 
+
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
         """
@@ -24,4 +25,3 @@ class Solution(object):
 
         tail.next = list1 if list1 else list2
         return dummy.next
-

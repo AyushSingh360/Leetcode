@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: List[int]
         """
         res = [0] * n
-        stack = []          # function ids
+        stack = []  # function ids
         prevTime = 0
 
         for log in logs:
@@ -26,4 +26,3 @@ class Solution(object):
                 prevTime = t + 1
 
         return res
-

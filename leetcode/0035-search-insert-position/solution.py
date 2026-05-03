@@ -18,4 +18,3 @@ class Solution(object):
                 right = mid - 1
 
         return left
-

@@ -10,15 +10,15 @@ class Solution(object):
         t2 = []
         for i in range(2 * n):
             if i % 2 == 0:
-                t1.append('0')
-                t2.append('1')
+                t1.append("0")
+                t2.append("1")
             else:
-                t1.append('1')
-                t2.append('0')
-        t1 = ''.join(t1)
-        t2 = ''.join(t2)
+                t1.append("1")
+                t2.append("0")
+        t1 = "".join(t1)
+        t2 = "".join(t2)
 
-        ss = s + s   # to simulate all rotations
+        ss = s + s  # to simulate all rotations
         diff1 = diff2 = 0
         ans = n  # upper bound
 
@@ -43,4 +43,3 @@ class Solution(object):
                 ans = min(ans, diff1, diff2)
 
         return ans
-

@@ -1,6 +1,7 @@
 from typing import List
 from math import sqrt
 
+
 class Solution:
     def minNumberOfSeconds(self, mountainHeight: int, workerTimes: List[int]) -> int:
         # Check if it's possible to remove at least mountainHeight within 'time_limit' seconds [web:27]

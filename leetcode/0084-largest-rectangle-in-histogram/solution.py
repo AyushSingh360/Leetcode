@@ -18,4 +18,3 @@ class Solution(object):
             stack.append(i)
 
         return max_area
-

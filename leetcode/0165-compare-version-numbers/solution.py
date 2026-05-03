@@ -1,9 +1,10 @@
 from typing import *
 
+
 class Solution:
     def compareVersion(self, version1: str, version2: str) -> int:
-        parts1 = version1.split('.')
-        parts2 = version2.split('.')
+        parts1 = version1.split(".")
+        parts2 = version2.split(".")
 
         # iterate up to the longer length
         n = max(len(parts1), len(parts2))

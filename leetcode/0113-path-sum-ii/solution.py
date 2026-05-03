@@ -6,6 +6,7 @@ from typing import List, Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         res = []

@@ -25,4 +25,3 @@ class Solution(object):
         # add the last interval
         merged.append([current_start, current_end])
         return merged
-

@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def maxSubarraySum(self, nums: List[int], k: int) -> int:
         INF = 10**18

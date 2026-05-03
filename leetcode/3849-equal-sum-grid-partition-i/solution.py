@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def canPartitionGrid(self, grid: List[List[int]]) -> bool:
         m, n = len(grid), len(grid[0])
@@ -30,4 +31,3 @@ class Solution:
                 return True
 
         return False
-

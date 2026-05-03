@@ -7,7 +7,7 @@ class Solution(object):
         """
         nums = [0] * n  # 0 means uncolored
         ans = []
-        same = 0        # current count of adjacent equal, non-zero pairs
+        same = 0  # current count of adjacent equal, non-zero pairs
 
         for i, c in queries:
             old = nums[i]
@@ -35,4 +35,3 @@ class Solution(object):
             ans.append(same)
 
         return ans
-

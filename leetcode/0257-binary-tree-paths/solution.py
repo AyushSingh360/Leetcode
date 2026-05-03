@@ -6,6 +6,7 @@ from typing import List, Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def binaryTreePaths(self, root: Optional[TreeNode]) -> List[str]:
         res = []

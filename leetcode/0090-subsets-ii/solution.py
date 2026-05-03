@@ -1,8 +1,9 @@
 from typing import List
 
+
 class Solution:
     def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
-        nums.sort()               # group duplicates together [web:5]
+        nums.sort()  # group duplicates together [web:5]
         res = []
         subset = []
 

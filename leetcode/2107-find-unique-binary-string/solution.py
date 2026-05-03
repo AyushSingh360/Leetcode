@@ -9,6 +9,5 @@ class Solution(object):
         res = []
         for i in range(n):
             # nums[i][i] is either '0' or '1'; flip it
-            res.append('1' if nums[i][i] == '0' else '0')
-        return ''.join(res)
-
+            res.append("1" if nums[i][i] == "0" else "0")
+        return "".join(res)

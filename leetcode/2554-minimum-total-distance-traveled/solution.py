@@ -1,6 +1,7 @@
 from functools import lru_cache
 from math import inf
 
+
 class Solution:
     def minimumTotalDistance(self, robot: List[int], factory: List[List[int]]) -> int:
         # Sort robots and factories by position

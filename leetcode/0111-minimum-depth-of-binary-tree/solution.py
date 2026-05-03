@@ -6,6 +6,7 @@ from typing import Optional
 #         self.left = left
 #         self.right = right
 
+
 class Solution:
     def minDepth(self, root: Optional[TreeNode]) -> int:
         if root is None:

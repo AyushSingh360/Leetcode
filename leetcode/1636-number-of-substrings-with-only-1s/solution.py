@@ -5,7 +5,7 @@ class Solution:
         cur = 0  # current consecutive '1's
 
         for ch in s:
-            if ch == '1':
+            if ch == "1":
                 cur += 1
                 ans += cur
             else:

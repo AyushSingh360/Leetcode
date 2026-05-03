@@ -8,8 +8,8 @@
 
 class Solution:
     def lowestCommonAncestor(
-        self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode'
-    ) -> 'TreeNode':
+        self, root: "TreeNode", p: "TreeNode", q: "TreeNode"
+    ) -> "TreeNode":
         # Make sure p_val <= q_val to simplify comparisons (optional)
         p_val, q_val = sorted([p.val, q.val])
 

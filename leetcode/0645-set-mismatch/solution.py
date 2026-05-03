@@ -18,4 +18,3 @@ class Solution(object):
                 miss = i
 
         return [dup, miss]
-

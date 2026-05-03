@@ -22,4 +22,3 @@ class Solution(object):
                     if j > 0:
                         dp[j] += dp[j - 1]  # from left + from top (already in dp[j])
         return dp[-1]
-

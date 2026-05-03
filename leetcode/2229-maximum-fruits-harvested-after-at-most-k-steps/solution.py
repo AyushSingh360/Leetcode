@@ -23,7 +23,7 @@ class Solution(object):
                 return right_pos - startPos <= k
             # Case 3: window spans both sides
             # two possible paths: go left first, or go right first
-            cost_left_first  = (startPos - left_pos) * 2 + (right_pos - startPos)
+            cost_left_first = (startPos - left_pos) * 2 + (right_pos - startPos)
             cost_right_first = (right_pos - startPos) * 2 + (startPos - left_pos)
             return min(cost_left_first, cost_right_first) <= k
 
@@ -37,4 +37,3 @@ class Solution(object):
             ans = max(ans, curr_sum)
 
         return ans
-

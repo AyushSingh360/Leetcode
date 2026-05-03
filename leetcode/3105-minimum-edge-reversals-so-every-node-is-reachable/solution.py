@@ -1,6 +1,8 @@
 from typing import List
 import sys
+
 sys.setrecursionlimit(1_000_000)
+
 
 class Solution:
     def minEdgeReversals(self, n: int, edges: List[List[int]]) -> List[int]:

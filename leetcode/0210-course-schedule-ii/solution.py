@@ -1,6 +1,7 @@
 from collections import deque
 from typing import List
 
+
 class Solution:
     def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
         # Build adjacency list and indegree array

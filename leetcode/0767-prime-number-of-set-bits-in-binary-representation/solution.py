@@ -7,7 +7,7 @@ class Solution(object):
         """
         # Max bits needed for right <= 10^6 is < 21, so possible primes in that range:
         prime_counts = {2, 3, 5, 7, 11, 13, 17, 19}
-        
+
         ans = 0
         for x in range(left, right + 1):
             # Count set bits using builtin
@@ -15,4 +15,3 @@ class Solution(object):
             if cnt in prime_counts:
                 ans += 1
         return ans
-

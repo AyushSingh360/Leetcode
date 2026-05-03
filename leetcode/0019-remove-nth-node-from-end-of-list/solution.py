@@ -4,6 +4,7 @@
 #         self.val = val
 #         self.next = next
 
+
 class Solution(object):
     def removeNthFromEnd(self, head, n):
         """
@@ -24,4 +25,3 @@ class Solution(object):
 
         second.next = second.next.next
         return dummy.next
-

@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: List[List[int]]
         """
         from collections import defaultdict
-        
+
         value_map = defaultdict(int)
 
         for key, val in nums1:
@@ -17,6 +17,5 @@ class Solution(object):
         result = []
         for key in sorted(value_map):
             result.append([key, value_map[key]])
-        
-        return result
 
+        return result

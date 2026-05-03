@@ -1,11 +1,12 @@
 from typing import List
 from collections import defaultdict
 
+
 class Solution:
     def minimumDistance(self, nums: List[int]) -> int:
         # For each value, keep a list of its last (up to) 3 indices
         pos = defaultdict(list)
-        ans = float('inf')
+        ans = float("inf")
 
         for i, x in enumerate(nums):
             pos[x].append(i)
@@ -20,4 +21,4 @@ class Solution:
                 dist = 2 * (i3 - i1)
                 ans = min(ans, dist)
 
-        return -1 if ans == float('inf') else ans
+        return -1 if ans == float("inf") else ans

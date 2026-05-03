@@ -1,6 +1,7 @@
 from bisect import bisect_left
 from typing import List
 
+
 class Solution:
     def maxDistance(self, side: int, points: List[List[int]], k: int) -> int:
         if k <= 1:
@@ -16,13 +17,13 @@ class Solution:
         perimeter = 4 * side
 
         def pos(x: int, y: int) -> int:
-            if y == 0:              # bottom: (0,0) -> (side,0)
+            if y == 0:  # bottom: (0,0) -> (side,0)
                 return x
-            if x == side:           # right: (side,0) -> (side,side)
+            if x == side:  # right: (side,0) -> (side,side)
                 return side + y
-            if y == side:           # top: (side,side) -> (0,side)
+            if y == side:  # top: (side,side) -> (0,side)
                 return 3 * side - x
-            return 4 * side - y     # left: (0,side) -> (0,0)
+            return 4 * side - y  # left: (0,side) -> (0,0)
 
         arr = sorted(pos(x, y) for x, y in points)
         arr2 = arr + [p + perimeter for p in arr]
@@ -73,4 +74,3 @@ class Solution:
                 hi = mid - 1
 
         return lo
-
