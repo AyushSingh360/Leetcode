@@ -16,6 +16,7 @@ jobs:
         run: |
           git config --global user.name "AyushSingh360"
           git config --global user.email "ayushsingh21109@gmail.com"
+          
       - name: Sync accepted submissions
         uses: joshcai/leetcode-sync@master
         with:
@@ -25,3 +26,24 @@ jobs:
           destination-folder: leetcode
           verbose: true
           commit-header: "[LeetCode Sync]"
+
+      - name: Checkout repository to build index
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Build Problem Index
+        run: python .scripts/build_index.py
+
+      - name: Commit and Push Index
+        run: |
+          git config --global user.name "AyushSingh360"
+          git config --global user.email "ayushsingh21109@gmail.com"
+          git add README.md
+          git commit -m "docs: auto-update algorithm index [skip ci]" || echo "No changes to commit"
+          git push

@@ -183,6 +183,16 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
   </a>
 </p>
 
+<br>
+
+### 🗂️ `< Solution.Index />`
+
+<!-- INDEX_START -->
+*The index will auto-generate here after the next sync...*
+<!-- INDEX_END -->
+
+<br>
+
 ---
 
 <p align="center">
