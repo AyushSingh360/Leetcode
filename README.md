@@ -9,7 +9,7 @@
 <br/>
 
 [![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/5VPjMsfuqV/)
-[![Sync](https://img.shields.io/github/actions/workflow/status/AyushSingh360/Leetcode/leetcode-sync.yml?label=CI%2FCD%20Sync&style=for-the-badge&color=00e599&logo=githubactions&logoColor=white)](https://github.com/AyushSingh360/Leetcode/actions)
+[![Sync](https://img.shields.io/github/actions/workflow/status/AyushSingh360/algorithm-arsenal/leetcode-sync.yml?label=CI%2FCD%20Sync&style=for-the-badge&color=00e599&logo=githubactions&logoColor=white)](https://github.com/AyushSingh360/algorithm-arsenal/actions)
 [![Language](https://img.shields.io/badge/Language-Polyglot-8A2BE2?style=for-the-badge&logo=codeforces&logoColor=white)](#-tech-stack)
 
 <br/>
