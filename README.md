@@ -18,12 +18,6 @@
   <img src="https://leetcard.jacoblin.cool/5VPjMsfuqV?theme=dark&font=Fira%20Code&ext=activity" alt="LeetCode Stats" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);" />
 </a>
 
-<br/>
-
-<a href="https://github.com/AyushSingh360">
-  <img src="https://github-profile-trophy.vercel.app/?username=AyushSingh360&theme=dark&no-frame=true&no-bg=true&margin-w=15&column=7" alt="GitHub Trophies" />
-</a>
-
 </div>
 
 ---
