@@ -37,10 +37,26 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Auto-Format Code (Prettier, Black, Clang)
+        run: |
+          # Install formatters
+          sudo apt-get update && sudo apt-get install -y clang-format
+          pip install black
+          npm install -g prettier
+
+          # Format Python
+          black leetcode/ || true
+
+          # Format C++, C, and Java
+          find leetcode/ -type f \( -name "*.cpp" -o -name "*.c" -o -name "*.java" \) -exec clang-format -style=Google -i {} + || true
+
+          # Format JS, TS, and Markdown
+          prettier --write "leetcode/**/*.{js,ts,md}" || true
+
       - name: Build Problem Index
         run: python .scripts/build_index.py
 
-      - name: Commit and Push Index
+      - name: Commit and Push Changes
         run: |
           git config --global user.name "AyushSingh360"
           git config --global user.email "ayushsingh21109@gmail.com"
