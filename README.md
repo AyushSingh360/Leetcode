@@ -481,6 +481,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 1580 | Shuffle The Array | `Python` | [View](./leetcode/1580-shuffle-the-array) |
 | 1612 | Avoid Flood In The City | `Python` | [View](./leetcode/1612-avoid-flood-in-the-city) |
 | 1626 | Can Make Arithmetic Progression From Sequence | `Python` | [View](./leetcode/1626-can-make-arithmetic-progression-from-sequence) |
+| 1630 | Count Odd Numbers In An Interval Range | `Python` | [View](./leetcode/1630-count-odd-numbers-in-an-interval-range) |
 | 1636 | Number Of Substrings With Only 1S | `Python` | [View](./leetcode/1636-number-of-substrings-with-only-1s) |
 | 1658 | Minimum Swaps To Arrange A Binary Grid | `Python` | [View](./leetcode/1658-minimum-swaps-to-arrange-a-binary-grid) |
 | 1663 | Detect Cycles In 2D Grid | `Python` | [View](./leetcode/1663-detect-cycles-in-2d-grid) |
