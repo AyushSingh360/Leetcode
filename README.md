@@ -405,6 +405,8 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 262 | Trips And Users | `SQL` | [View](./leetcode/0262-trips-and-users) |
 | 263 | Ugly Number | `Python` | [View](./leetcode/0263-ugly-number) |
 | 264 | Ugly Number Ii | `Python` | [View](./leetcode/0264-ugly-number-ii) |
+| 268 | Missing Number | `Python` | [View](./leetcode/0268-missing-number) |
+| 274 | H Index | `Python` | [View](./leetcode/0274-h-index) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
 | 371 | Sum Of Two Integers | `Python` | [View](./leetcode/0371-sum-of-two-integers) |
