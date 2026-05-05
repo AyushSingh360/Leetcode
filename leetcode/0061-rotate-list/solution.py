@@ -1,51 +1,38 @@
-class ListNode(object):
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
-
-class Solution(object):
-    def rotateRight(self, head, k):
+class Solution:
+    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+        # Edge cases: empty list, single node, or no rotation
         if not head or not head.next or k == 0:
             return head
 
-        # Step 1: Calculate length with repeated traversals (inefficient)
-        length = 0
-        temp = head
-        while temp:
-            temp = temp.next
+        # 1) Compute the length and get the tail
+        length = 1
+        tail = head
+        while tail.next:
+            tail = tail.next
             length += 1
 
-        # Redundant recalculation of length to add delay
-        for _ in range(5):
-            l = 0
-            temp = head
-            while temp:
-                temp = temp.next
-                l += 1
-
-        k %= length
+        # 2) Reduce k
+        k = k % length
         if k == 0:
             return head
 
-        # Step 2: Get the tail (inefficiently)
-        tail = head
-        for _ in range(length - 1):
-            tail = tail.next
-
-        # Step 3: Make it circular
-        tail.next = head
-
-        # Step 4: Find new tail
+        # 3) Find new tail: (length - k - 1) steps from head
+        steps_to_new_tail = length - k - 1
         new_tail = head
-        for _ in range(length - k - 1):
-            # Redundant inner loop to slow down
-            for _ in range(10):
-                pass
+        for _ in range(steps_to_new_tail):
             new_tail = new_tail.next
 
-        # Step 5: Cut the circle
+        # 4) New head is next of new_tail
         new_head = new_tail.next
+
+        # 5) Break and reconnect
         new_tail.next = None
+        tail.next = head
 
         return new_head
