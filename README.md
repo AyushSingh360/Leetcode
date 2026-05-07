@@ -407,6 +407,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 264 | Ugly Number Ii | `Python` | [View](./leetcode/0264-ugly-number-ii) |
 | 268 | Missing Number | `Python` | [View](./leetcode/0268-missing-number) |
 | 274 | H Index | `Python` | [View](./leetcode/0274-h-index) |
+| 275 | H Index Ii | `Python` | [View](./leetcode/0275-h-index-ii) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
 | 371 | Sum Of Two Integers | `Python` | [View](./leetcode/0371-sum-of-two-integers) |
@@ -613,6 +614,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 3973 | Flip Square Submatrix Vertically | `Python` | [View](./leetcode/3973-flip-square-submatrix-vertically) |
 | 3974 | Xor After Range Multiplication Queries I | `Python` | [View](./leetcode/3974-xor-after-range-multiplication-queries-i) |
 | 3975 | Xor After Range Multiplication Queries Ii | `Python` | [View](./leetcode/3975-xor-after-range-multiplication-queries-ii) |
+| 3981 | Jump Game Ix | `Python` | [View](./leetcode/3981-jump-game-ix) |
 | 3982 | Maximum Walls Destroyed By Robots | `Python` | [View](./leetcode/3982-maximum-walls-destroyed-by-robots) |
 | 3983 | Minimum Operations To Equalize Binary String | `Python` | [View](./leetcode/3983-minimum-operations-to-equalize-binary-string) |
 | 3986 | Maximum Path Score In A Grid | `Python` | [View](./leetcode/3986-maximum-path-score-in-a-grid) |

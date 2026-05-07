@@ -8,8 +8,8 @@ class Solution:
             mid = (left + right) // 2
             if citations[mid] >= n - mid:
                 first_true = mid
-                right = mid - 1   # try to find an earlier index
+                right = mid - 1  # try to find an earlier index
             else:
-                left = mid + 1    # need more cited papers, move right
+                left = mid + 1  # need more cited papers, move right
 
         return 0 if first_true == -1 else n - first_true
