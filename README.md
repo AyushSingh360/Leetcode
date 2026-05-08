@@ -611,6 +611,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 3884 | Minimum Absolute Difference In Sliding Submatrix | `Python` | [View](./leetcode/3884-minimum-absolute-difference-in-sliding-submatrix) |
 | 3886 | Count Number Of Trapezoids I | `Python` | [View](./leetcode/3886-count-number-of-trapezoids-i) |
 | 3902 | Maximize Spanning Tree Stability With Upgrades | `Python` | [View](./leetcode/3902-maximize-spanning-tree-stability-with-upgrades) |
+| 3933 | Minimum Jumps To Reach End Via Prime Teleportation | `Python` | [View](./leetcode/3933-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | 3973 | Flip Square Submatrix Vertically | `Python` | [View](./leetcode/3973-flip-square-submatrix-vertically) |
 | 3974 | Xor After Range Multiplication Queries I | `Python` | [View](./leetcode/3974-xor-after-range-multiplication-queries-i) |
 | 3975 | Xor After Range Multiplication Queries Ii | `Python` | [View](./leetcode/3975-xor-after-range-multiplication-queries-ii) |

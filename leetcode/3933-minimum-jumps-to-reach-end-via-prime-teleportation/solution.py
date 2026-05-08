@@ -1,19 +1,20 @@
 from collections import deque
 
+
 class Solution:
     def minJumps(self, nums: List[int]) -> int:
         n = len(nums)
         if n <= 1:
             return 0
-        
+
         max_val = max(nums)
-        
+
         # 1. Sieve of Eratosthenes to find the Smallest Prime Factor (SPF)
         # This allows us to factorize any number in O(log(val)) time.
         spf = list(range(max_val + 1))
         for i in range(2, int(max_val**0.5) + 1):
             if spf[i] == i:
-                for j in range(i*i, max_val + 1, i):
+                for j in range(i * i, max_val + 1, i):
                     if spf[j] == j:
                         spf[j] = i
 
@@ -40,7 +41,7 @@ class Solution:
                 prime_to_indices[p].append(idx)
 
         # 3. BFS for Shortest Path
-        queue = deque([(0, 0)]) # (current_index, jumps)
+        queue = deque([(0, 0)])  # (current_index, jumps)
         visited_indices = {0}
         visited_primes = set()
 
@@ -61,7 +62,7 @@ class Solution:
             # We only check teleportation if the current number itself IS prime (p)
             # and jump to any index j where nums[j] % p == 0.
             val = nums[curr_idx]
-            
+
             # Check if nums[curr_idx] is a prime number
             if val > 1 and spf[val] == val:
                 p = val
