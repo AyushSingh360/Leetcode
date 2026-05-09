@@ -22,7 +22,7 @@
 
 ---
 
-### 🚀 `< System.Overview />`
+### 🚀 ` System.Overview `
 
 Welcome to the **Vault**. This isn't just a repository; it's an automated, self-updating timeline of my algorithmic journey. Every time a problem is conquered on LeetCode, a serverless pipeline instantly pulls the optimal solution, formats it, and injects it directly into this codebase. Zero manual intervention. Maximum efficiency.
 
@@ -38,7 +38,7 @@ Welcome to the **Vault**. This isn't just a repository; it's an automated, self-
 
 <br>
 
-### 🧬 `< Automation.Matrix />`
+### 🧬 ` Automation.Matrix `
 
 ```mermaid
 sequenceDiagram
@@ -57,7 +57,7 @@ sequenceDiagram
 
 <br>
 
-### 🕸️ `< Algorithmic.Skill_Tree />`
+### 🕸️ ` Algorithmic.Skill_Tree `
 
 A dynamic mapping of the core competencies being trained and cataloged within this repository.
 
@@ -82,7 +82,7 @@ mindmap
 
 <br>
 
-### 📊 `< Complexity.Distribution />`
+### 📊 ` Complexity.Distribution `
 
 Conceptual breakdown of optimal solution approaches targeted in this archive.
 
@@ -96,7 +96,7 @@ pie title "Targeted Time Complexities"
 
 <br>
 
-### 🌿 `< Version_Control.Topology />`
+### 🌿 ` Version_Control.Topology `
 
 How the automated bot interacts with the Git history upon solving challenges.
 
@@ -118,7 +118,7 @@ gitGraph
 
 <br>
 
-### 🗄️ `< Data.Structures />`
+### 🗄️ ` Data.Structures `
 
 The archive is meticulously sorted for rapid O(1) retrieval.
 
@@ -137,11 +137,12 @@ root@leetcode-vault:~# tree -L 2
 │   └── 🔴 Hard/                # Advanced Optimization
 └── 📜 README.md                # System Documentation
 ```
+
 </details>
 
 <br>
 
-### 💻 `< Tech.Stack />`
+### 💻 ` Tech.Stack `
 
 <table align="center">
   <tr>
@@ -170,7 +171,7 @@ root@leetcode-vault:~# tree -L 2
 
 <br>
 
-### 📡 `< Establish.Connection />`
+### 📡 `Establish.Connection`
 
 Let's collaborate on system design, competitive programming, or next-gen tech.
 
@@ -181,11 +182,17 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
   <a href="https://github.com/AyushSingh360">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
+  <a href="https://www.linkedin.com/in/ayushsingh360/">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
 </p>
 
 <br>
 
-### 🗂️ `< Solution.Index />`
+### 🗂️ ` Solution.Index `
+
+> [!TIP]
+> 🔍 **Search by Number:** Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>F</kbd> and type the problem number (e.g., `| 1 |` or just `1`) to jump directly to it!
 
 <!-- INDEX_START -->
 | # | Problem | Language | Code |
