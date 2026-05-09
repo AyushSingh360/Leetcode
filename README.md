@@ -408,6 +408,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 268 | Missing Number | `Python` | [View](./leetcode/0268-missing-number) |
 | 274 | H Index | `Python` | [View](./leetcode/0274-h-index) |
 | 275 | H Index Ii | `Python` | [View](./leetcode/0275-h-index-ii) |
+| 279 | Perfect Squares | `Python` | [View](./leetcode/0279-perfect-squares) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
 | 371 | Sum Of Two Integers | `Python` | [View](./leetcode/0371-sum-of-two-integers) |
@@ -506,6 +507,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2015 | Determine Whether Matrix Can Be Obtained By Rotation | `Python` | [View](./leetcode/2015-determine-whether-matrix-can-be-obtained-by-rotation) |
 | 2017 | Minimum Number Of Flips To Make The Binary String Alternating | `Python` | [View](./leetcode/2017-minimum-number-of-flips-to-make-the-binary-string-alternating) |
 | 2037 | Count Square Sum Triples | `Python` | [View](./leetcode/2037-count-square-sum-triples) |
+| 2043 | Cyclically Rotating A Grid | `Python` | [View](./leetcode/2043-cyclically-rotating-a-grid) |
 | 2058 | Concatenation Of Array | `Python` | [View](./leetcode/2058-concatenation-of-array) |
 | 2059 | Unique Length 3 Palindromic Subsequences | `Python` | [View](./leetcode/2059-unique-length-3-palindromic-subsequences) |
 | 2107 | Find Unique Binary String | `Python` | [View](./leetcode/2107-find-unique-binary-string) |

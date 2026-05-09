@@ -1,7 +1,7 @@
 class Solution:
     def numSquares(self, n: int) -> int:
         # dp[i] = least number of perfect squares that sum to i
-        dp = [0] + [float('inf')] * n
+        dp = [0] + [float("inf")] * n
 
         # precompute all perfect squares <= n
         squares = []

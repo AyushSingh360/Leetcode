@@ -1,17 +1,18 @@
 from typing import List
 
+
 class Solution:
     def rotateGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
         m, n = len(grid), len(grid[0])
         layers = min(m, n) // 2
-        
+
         for layer in range(layers):
             elems = []
             top, left = layer, layer
             bottom, right = m - 1 - layer, n - 1 - layer
 
             # 1) Extract the current layer into a list in traversal order
-            
+
             # top row (left → right)
             for j in range(left, right):
                 elems.append(grid[top][j])
