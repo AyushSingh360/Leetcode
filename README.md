@@ -415,7 +415,11 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 268 | Missing Number | `Python` | [View](./leetcode/0268-missing-number) |
 | 274 | H Index | `Python` | [View](./leetcode/0274-h-index) |
 | 275 | H Index Ii | `Python` | [View](./leetcode/0275-h-index-ii) |
+| 278 | First Bad Version | `Python` | [View](./leetcode/0278-first-bad-version) |
 | 279 | Perfect Squares | `Python` | [View](./leetcode/0279-perfect-squares) |
+| 283 | Move Zeroes | `Python` | [View](./leetcode/0283-move-zeroes) |
+| 284 | Peeking Iterator | `Python` | [View](./leetcode/0284-peeking-iterator) |
+| 300 | Longest Increasing Subsequence | `Python` | [View](./leetcode/0300-longest-increasing-subsequence) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
 | 371 | Sum Of Two Integers | `Python` | [View](./leetcode/0371-sum-of-two-integers) |
@@ -576,6 +580,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2820 | Return Length Of Arguments Passed | `JavaScript` | [View](./leetcode/2820-return-length-of-arguments-passed) |
 | 2821 | Timeout Cancellation | `JavaScript` | [View](./leetcode/2821-timeout-cancellation) |
 | 2846 | Robot Collisions | `Python` | [View](./leetcode/2846-robot-collisions) |
+| 2855 | Maximum Number Of Jumps To Reach The Last Index | `Python` | [View](./leetcode/2855-maximum-number-of-jumps-to-reach-the-last-index) |
 | 2858 | Join Two Arrays By Id | `JavaScript` | [View](./leetcode/2858-join-two-arrays-by-id) |
 | 2859 | Add Two Promises | `JavaScript` | [View](./leetcode/2859-add-two-promises) |
 | 2860 | Sort By | `JavaScript` | [View](./leetcode/2860-sort-by) |
