@@ -548,6 +548,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2598 | Shortest Distance To Target String In A Circular Array | `Python` | [View](./leetcode/2598-shortest-distance-to-target-string-in-a-circular-array) |
 | 2610 | Closest Prime Numbers In Range | `Python` | [View](./leetcode/2610-closest-prime-numbers-in-range) |
 | 2625 | Increment Submatrices By One | `Python` | [View](./leetcode/2625-increment-submatrices-by-one) |
+| 2639 | Separate The Digits In An Array | `Python` | [View](./leetcode/2639-separate-the-digits-in-an-array) |
 | 2689 | Rearranging Fruits | `Python` | [View](./leetcode/2689-rearranging-fruits) |
 | 2707 | Merge Two 2D Arrays By Summing Values | `Python` | [View](./leetcode/2707-merge-two-2d-arrays-by-summing-values) |
 | 2708 | Find The String With Lcp | `Python` | [View](./leetcode/2708-find-the-string-with-lcp) |
