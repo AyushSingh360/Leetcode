@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
         # Phase 1: Find intersection point in the cycle
@@ -7,8 +8,8 @@ class Solution:
         fast = nums[0]
 
         while True:
-            slow = nums[slow]          # move 1 step
-            fast = nums[nums[fast]]    # move 2 steps
+            slow = nums[slow]  # move 1 step
+            fast = nums[nums[fast]]  # move 2 steps
             if slow == fast:
                 break
 

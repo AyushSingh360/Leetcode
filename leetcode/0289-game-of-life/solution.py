@@ -1,5 +1,6 @@
 from typing import List
 
+
 class Solution:
     def gameOfLife(self, board: List[List[int]]) -> None:
         """

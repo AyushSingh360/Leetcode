@@ -419,6 +419,8 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 279 | Perfect Squares | `Python` | [View](./leetcode/0279-perfect-squares) |
 | 283 | Move Zeroes | `Python` | [View](./leetcode/0283-move-zeroes) |
 | 284 | Peeking Iterator | `Python` | [View](./leetcode/0284-peeking-iterator) |
+| 287 | Find The Duplicate Number | `Python` | [View](./leetcode/0287-find-the-duplicate-number) |
+| 289 | Game Of Life | `Python` | [View](./leetcode/0289-game-of-life) |
 | 300 | Longest Increasing Subsequence | `Python` | [View](./leetcode/0300-longest-increasing-subsequence) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
@@ -504,6 +506,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 1694 | Make Sum Divisible By P | `Python` | [View](./leetcode/1694-make-sum-divisible-by-p) |
 | 1704 | Special Positions In A Binary Matrix | `Python` | [View](./leetcode/1704-special-positions-in-a-binary-matrix) |
 | 1716 | Maximum Non Negative Product In A Matrix | `Python` | [View](./leetcode/1716-maximum-non-negative-product-in-a-matrix) |
+| 1784 | Minimum Initial Energy To Finish Tasks | `Python` | [View](./leetcode/1784-minimum-initial-energy-to-finish-tasks) |
 | 1800 | Concatenation Of Consecutive Binary Numbers | `Python` | [View](./leetcode/1800-concatenation-of-consecutive-binary-numbers) |
 | 1807 | Partitioning Into Minimum Number Of Deci Binary Numbers | `Python` | [View](./leetcode/1807-partitioning-into-minimum-number-of-deci-binary-numbers) |
 | 1840 | Minimize Hamming Distance After Swap Operations | `Python` | [View](./leetcode/1840-minimize-hamming-distance-after-swap-operations) |
