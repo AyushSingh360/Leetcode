@@ -421,6 +421,9 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 284 | Peeking Iterator | `Python` | [View](./leetcode/0284-peeking-iterator) |
 | 287 | Find The Duplicate Number | `Python` | [View](./leetcode/0287-find-the-duplicate-number) |
 | 289 | Game Of Life | `Python` | [View](./leetcode/0289-game-of-life) |
+| 290 | Word Pattern | `Python` | [View](./leetcode/0290-word-pattern) |
+| 292 | Nim Game | `Python` | [View](./leetcode/0292-nim-game) |
+| 299 | Bulls And Cows | `Python` | [View](./leetcode/0299-bulls-and-cows) |
 | 300 | Longest Increasing Subsequence | `Python` | [View](./leetcode/0300-longest-increasing-subsequence) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
@@ -592,6 +595,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2862 | Interval Cancellation | `JavaScript` | [View](./leetcode/2862-interval-cancellation) |
 | 2863 | Calculator With Method Chaining | `TypeScript` | [View](./leetcode/2863-calculator-with-method-chaining) |
 | 2864 | Is Object Empty | `JavaScript` | [View](./leetcode/2864-is-object-empty) |
+| 2892 | Check If Array Is Good | `Python` | [View](./leetcode/2892-check-if-array-is-good) |
 | 2905 | Count Paths That Can Form A Palindrome In A Tree | `Python` | [View](./leetcode/2905-count-paths-that-can-form-a-palindrome-in-a-tree) |
 | 2978 | Check If Strings Can Be Made Equal With Operations Ii | `Python` | [View](./leetcode/2978-check-if-strings-can-be-made-equal-with-operations-ii) |
 | 2999 | Check If Strings Can Be Made Equal With Operations I | `Python` | [View](./leetcode/2999-check-if-strings-can-be-made-equal-with-operations-i) |
