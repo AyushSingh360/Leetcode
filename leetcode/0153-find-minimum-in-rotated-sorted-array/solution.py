@@ -1,23 +1,18 @@
 from typing import List
 
-
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         left, right = 0, len(nums) - 1
 
-        # If the array is not rotated (already sorted)
-        if nums[left] <= nums[right]:
-            return nums[left]
-
         while left < right:
             mid = (left + right) // 2
 
-            # Minimum is in the right half if mid element > right element
-            if nums[mid] > nums[right]:
-                left = mid + 1
-            else:
-                # Minimum is in the left half including mid
+            # If mid element is less than the rightmost, min is in [left, mid]
+            if nums[mid] < nums[right]:
                 right = mid
+            # Else min is in (mid, right]
+            else:
+                left = mid + 1
 
-        # left == right -> index of minimum
+        # left == right is the index of the minimum
         return nums[left]
