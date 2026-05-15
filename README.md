@@ -425,6 +425,8 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 292 | Nim Game | `Python` | [View](./leetcode/0292-nim-game) |
 | 299 | Bulls And Cows | `Python` | [View](./leetcode/0299-bulls-and-cows) |
 | 300 | Longest Increasing Subsequence | `Python` | [View](./leetcode/0300-longest-increasing-subsequence) |
+| 303 | Range Sum Query   Immutable | `Python` | [View](./leetcode/0303-range-sum-query---immutable) |
+| 304 | Range Sum Query 2D   Immutable | `Python` | [View](./leetcode/0304-range-sum-query-2d---immutable) |
 | 316 | Remove Duplicate Letters | `Python` | [View](./leetcode/0316-remove-duplicate-letters) |
 | 347 | Top K Frequent Elements | `Python` | [View](./leetcode/0347-top-k-frequent-elements) |
 | 371 | Sum Of Two Integers | `Python` | [View](./leetcode/0371-sum-of-two-integers) |
@@ -583,7 +585,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2804 | Compact Object | `TypeScript` | [View](./leetcode/2804-compact-object) |
 | 2805 | Array Wrapper | `TypeScript` | [View](./leetcode/2805-array-wrapper) |
 | 2807 | Execute Asynchronous Functions In Parallel | `JavaScript` | [View](./leetcode/2807-execute-asynchronous-functions-in-parallel) |
-| 2809 | Create Hello World Function | `TypeScript`, `JavaScript` | [View](./leetcode/2809-create-hello-world-function) |
+| 2809 | Create Hello World Function | `JavaScript`, `TypeScript` | [View](./leetcode/2809-create-hello-world-function) |
 | 2813 | To Be Or Not To Be | `JavaScript` | [View](./leetcode/2813-to-be-or-not-to-be) |
 | 2820 | Return Length Of Arguments Passed | `JavaScript` | [View](./leetcode/2820-return-length-of-arguments-passed) |
 | 2821 | Timeout Cancellation | `JavaScript` | [View](./leetcode/2821-timeout-cancellation) |
@@ -633,6 +635,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 3850 | Equal Sum Grid Partition Ii | `Python` | [View](./leetcode/3850-equal-sum-grid-partition-ii) |
 | 3884 | Minimum Absolute Difference In Sliding Submatrix | `Python` | [View](./leetcode/3884-minimum-absolute-difference-in-sliding-submatrix) |
 | 3886 | Count Number Of Trapezoids I | `Python` | [View](./leetcode/3886-count-number-of-trapezoids-i) |
+| 3892 | Best Time To Buy And Sell Stock V | `Python` | [View](./leetcode/3892-best-time-to-buy-and-sell-stock-v) |
 | 3902 | Maximize Spanning Tree Stability With Upgrades | `Python` | [View](./leetcode/3902-maximize-spanning-tree-stability-with-upgrades) |
 | 3933 | Minimum Jumps To Reach End Via Prime Teleportation | `Python` | [View](./leetcode/3933-minimum-jumps-to-reach-end-via-prime-teleportation) |
 | 3973 | Flip Square Submatrix Vertically | `Python` | [View](./leetcode/3973-flip-square-submatrix-vertically) |

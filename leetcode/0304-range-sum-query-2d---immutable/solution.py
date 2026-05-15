@@ -12,10 +12,10 @@ class NumMatrix:
         for i in range(m):
             for j in range(n):
                 self.prefix[i + 1][j + 1] = (
-                    self.prefix[i][j + 1]      # above
-                    + self.prefix[i + 1][j]    # left
-                    - self.prefix[i][j]        # overlap
-                    + matrix[i][j]             # current cell
+                    self.prefix[i][j + 1]  # above
+                    + self.prefix[i + 1][j]  # left
+                    - self.prefix[i][j]  # overlap
+                    + matrix[i][j]  # current cell
                 )
 
     def sumRegion(self, row1: int, col1: int, row2: int, col2: int) -> int:
