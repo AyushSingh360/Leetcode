@@ -342,6 +342,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 151 | Reverse Words In A String | `Python` | [View](./leetcode/0151-reverse-words-in-a-string) |
 | 152 | Maximum Product Subarray | `Python` | [View](./leetcode/0152-maximum-product-subarray) |
 | 153 | Find Minimum In Rotated Sorted Array | `Python` | [View](./leetcode/0153-find-minimum-in-rotated-sorted-array) |
+| 154 | Find Minimum In Rotated Sorted Array Ii | `Python` | [View](./leetcode/0154-find-minimum-in-rotated-sorted-array-ii) |
 | 155 | Min Stack | `Python` | [View](./leetcode/0155-min-stack) |
 | 160 | Intersection Of Two Linked Lists | `Python` | [View](./leetcode/0160-intersection-of-two-linked-lists) |
 | 162 | Find Peak Element | `Python` | [View](./leetcode/0162-find-peak-element) |
@@ -538,6 +539,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 2178 | Walking Robot Simulation Ii | `Python` | [View](./leetcode/2178-walking-robot-simulation-ii) |
 | 2197 | Decode The Slanted Ciphertext | `Python` | [View](./leetcode/2197-decode-the-slanted-ciphertext) |
 | 2199 | Two Furthest Houses With Different Colors | `Python` | [View](./leetcode/2199-two-furthest-houses-with-different-colors) |
+| 2213 | Find All People With Secret | `Python` | [View](./leetcode/2213-find-all-people-with-secret) |
 | 2229 | Maximum Fruits Harvested After At Most K Steps | `Python` | [View](./leetcode/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | 2263 | Maximum Running Time Of N Computers | `Python` | [View](./leetcode/2263-maximum-running-time-of-n-computers) |
 | 2265 | Partition Array According To Given Pivot | `Python` | [View](./leetcode/2265-partition-array-according-to-given-pivot) |
@@ -641,6 +643,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 3973 | Flip Square Submatrix Vertically | `Python` | [View](./leetcode/3973-flip-square-submatrix-vertically) |
 | 3974 | Xor After Range Multiplication Queries I | `Python` | [View](./leetcode/3974-xor-after-range-multiplication-queries-i) |
 | 3975 | Xor After Range Multiplication Queries Ii | `Python` | [View](./leetcode/3975-xor-after-range-multiplication-queries-ii) |
+| 3980 | Best Time To Buy And Sell Stock Using Strategy | `Python` | [View](./leetcode/3980-best-time-to-buy-and-sell-stock-using-strategy) |
 | 3981 | Jump Game Ix | `Python` | [View](./leetcode/3981-jump-game-ix) |
 | 3982 | Maximum Walls Destroyed By Robots | `Python` | [View](./leetcode/3982-maximum-walls-destroyed-by-robots) |
 | 3983 | Minimum Operations To Equalize Binary String | `Python` | [View](./leetcode/3983-minimum-operations-to-equalize-binary-string) |

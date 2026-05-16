@@ -1,8 +1,11 @@
 from collections import defaultdict, deque
 from typing import List
 
+
 class Solution:
-    def findAllPeople(self, n: int, meetings: List[List[int]], firstPerson: int) -> List[int]:
+    def findAllPeople(
+        self, n: int, meetings: List[List[int]], firstPerson: int
+    ) -> List[int]:
         # Track who knows the secret
         knows = [False] * n
         knows[0] = True
