@@ -486,6 +486,7 @@ Let's collaborate on system design, competitive programming, or next-gen tech.
 | 1388 | Greatest Sum Divisible By Three | `Python` | [View](./leetcode/1388-greatest-sum-divisible-by-three) |
 | 1398 | Number Of Ways To Stay In The Same Place After Some Steps | `Python` | [View](./leetcode/1398-number-of-ways-to-stay-in-the-same-place-after-some-steps) |
 | 1415 | Students And Examinations | `SQL` | [View](./leetcode/1415-students-and-examinations) |
+| 1428 | Jump Game Iii | `Python` | [View](./leetcode/1428-jump-game-iii) |
 | 1443 | Minimum Distance To Type A Word Using Two Fingers | `Python` | [View](./leetcode/1443-minimum-distance-to-type-a-word-using-two-fingers) |
 | 1458 | Sort Integers By The Number Of 1 Bits | `Python` | [View](./leetcode/1458-sort-integers-by-the-number-of-1-bits) |
 | 1460 | Number Of Substrings Containing All Three Characters | `Python` | [View](./leetcode/1460-number-of-substrings-containing-all-three-characters) |
